@@ -1,56 +1,69 @@
 "use client";
 
 import React from "react";
+import { RefreshCw, Clock, Globe } from "lucide-react";
 
 export default function HighlightsBanner() {
+  const benefits = [
+    {
+      title: "3 Months Free Switch",
+      desc: "Transfer your postbox to us and get 3 months free. Proof of current provider required.",
+      icon: RefreshCw,
+    },
+    {
+      title: "24/7 Letter Drop-Off",
+      desc: "Bring your letters 24/7, making mail handling fit your schedule completely.",
+      icon: Clock,
+    },
+    {
+      title: "Mail Scanning",
+      desc: "We scan incoming mail and send it digitally so you never miss important correspondence.",
+      icon: Globe,
+    },
+  ];
+
   return (
-    <section className="bg-brand-dark text-white py-12 border-t border-slate-800">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Column 1: Transfer Offer */}
-          <div className="flex gap-4 items-start p-4 bg-slate-900/40 rounded-2xl border border-slate-800/40 hover:border-secondary/20 transition-colors duration-300">
-            <div className="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-              </svg>
-            </div>
-            <div>
-              <h3 className="font-bold text-base text-white mb-1">Transfer Offer</h3>
-              <p className="text-slate-400 text-xs leading-relaxed">
-                Easily transfer your current address to Postbox24 with our simple, guided process.
-              </p>
-            </div>
+    <section className="bg-[#05A7F4]/6 py-10 md:py-12 relative overflow-hidden border-y border-[#05A7F4]/15">
+      {/* Subtle background decorative element */}
+      <div className="absolute inset-0 z-0 pointer-events-none select-none overflow-hidden">
+        <div className="absolute -top-20 left-1/3 w-[400px] h-[400px] bg-[#05A7F4]/3 rounded-full blur-[100px] opacity-30" />
+      </div>
+
+      <div className="max-w-6xl mx-auto px-6 relative z-10 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+          
+          {/* Left Column: Compact Header */}
+          <div className="lg:col-span-3">
+            <h2 className="text-2xl md:text-3xl font-display font-normal text-[#0a1628] tracking-tight leading-tight">
+              Additional <span className="italic text-[#05A7F4] block md:inline">Benefits</span>
+            </h2>
+            <p className="text-slate-500 text-[12px] leading-relaxed mt-2.5 max-w-[220px]">
+              Designed to make managing your official mail simple and hassle-free.
+            </p>
           </div>
 
-          {/* Column 2: 24/7 Drop-Off */}
-          <div className="flex gap-4 items-start p-4 bg-slate-900/40 rounded-2xl border border-slate-800/40 hover:border-secondary/20 transition-colors duration-300">
-            <div className="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-              </svg>
-            </div>
-            <div>
-              <h3 className="font-bold text-base text-white mb-1">24/7 Drop-Off</h3>
-              <p className="text-slate-400 text-xs leading-relaxed">
-                Physical drop-off point for parcels and documents, ensuring 24/7 availability for your partners.
-              </p>
-            </div>
+          {/* Right Column: Horizontal items */}
+          <div className="lg:col-span-9 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            {benefits.map((benefit, idx) => {
+              const Icon = benefit.icon;
+              return (
+                <div key={idx} className="flex gap-3.5 items-start">
+                  <div className="w-9 h-9 rounded-lg bg-[#EEF6FD] text-[#05A7F4] flex items-center justify-center border border-[#05A7F4]/10 shrink-0">
+                    <Icon className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-[#0a1628] text-sm mb-1 tracking-tight leading-snug">
+                      {benefit.title}
+                    </h3>
+                    <p className="text-slate-500 text-[12px] leading-relaxed">
+                      {benefit.desc}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
 
-          {/* Column 3: Digital Scanning */}
-          <div className="flex gap-4 items-start p-4 bg-slate-900/40 rounded-2xl border border-slate-800/40 hover:border-secondary/20 transition-colors duration-300">
-            <div className="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0a8 8 0 11-16 0 8 8 0 0116 0z" />
-              </svg>
-            </div>
-            <div>
-              <h3 className="font-bold text-base text-white mb-1">Digital Scanning</h3>
-              <p className="text-slate-400 text-xs leading-relaxed">
-                Secure physical-to-digital scanning, letting you read your mail from anywhere in the world.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>

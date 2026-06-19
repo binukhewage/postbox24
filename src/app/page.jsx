@@ -10,42 +10,23 @@ import Locations from "./components/Locations";
 import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
 import FooterCTA from "./components/FooterCTA";
+import ScrollReveal from "./components/ScrollReveal";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen bg-white text-slate-900 selection:bg-secondary/30 selection:text-slate-900">
-      {/* Floating Header */}
+    <div className="relative min-h-screen bg-white text-[#0a1628] selection:bg-[#05A7F4]/20 selection:text-[#0a1628]">
       <Navbar />
-
-      {/* Hero Section */}
       <Hero />
-
-      {/* Pricing Cards Section */}
       <Pricing />
-
-      {/* Features Grid Section */}
-      <Features />
-
-      {/* Dark Value Highlights Banner */}
       <HighlightsBanner />
-
-      {/* Services Grid Section */}
+      <Features />
       <Services />
-
-      {/* Onboarding Checklist Steps Section */}
       <Steps />
-
-      {/* Locations Map Cards Section */}
       <Locations />
-
-      {/* Testimonials Reviews Section */}
       <Testimonials />
-
-      {/* Frequently Asked Questions Section */}
       <FAQ />
-
-      {/* Final Action Banner and Footer */}
       <FooterCTA />
+      <ScrollReveal />
     </div>
   );
 }

@@ -1,178 +1,126 @@
 "use client";
 
 import React from "react";
+import { FiPhone, FiMessageSquare, FiMapPin } from "react-icons/fi";
 
 export default function FooterCTA() {
+  const contacts = [
+    {
+      title: "Telephone Support",
+      icon: <FiPhone className="w-4.5 h-4.5" />,
+      content: (
+        <div className="space-y-2 text-xs text-slate-500">
+          <p>
+            <span className="font-semibold text-slate-700">Phone: </span>
+            <a href="tel:087430770" className="hover:text-[#05A7F4] transition-colors font-semibold">
+              08-743 07 70
+            </a>
+          </p>
+          <p>
+            <span className="font-semibold text-slate-700">Telephone hours:</span>
+            <br />Monday – Friday 12:00–19:00
+          </p>
+          <p className="text-slate-400 italic pt-2 border-t border-[#E1EDF8]">
+            Or email us at{" "}
+            <a href="mailto:info@postbox24.se" className="hover:text-[#05A7F4] transition-colors font-medium not-italic">
+              info@postbox24.se
+            </a>
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "Direct Channels",
+      icon: <FiMessageSquare className="w-4.5 h-4.5" />,
+      content: (
+        <div className="space-y-3 text-xs text-slate-500">
+          <p>
+            <span className="font-semibold text-slate-700">Email:</span>
+            <br />
+            <a href="mailto:info@postbox24.se" className="hover:text-[#05A7F4] transition-colors font-medium">
+              info@postbox24.se
+            </a>
+          </p>
+          <p>
+            <span className="font-semibold text-slate-700">Telegram:</span>
+            <br />
+            <a href="https://t.me/postbox24se" target="_blank" rel="noreferrer" className="hover:text-[#05A7F4] transition-colors font-medium">
+              @postbox24se
+            </a>
+          </p>
+          <p className="pt-2 border-t border-[#E1EDF8]">
+            <span className="font-semibold text-slate-700">SWISH: </span>
+            <span className="font-mono bg-[#F7FBFF] px-2 py-0.5 rounded-lg text-slate-600 font-semibold border border-[#E1EDF8]">
+              1230541359
+            </span>
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "Service Office",
+      icon: <FiMapPin className="w-4.5 h-4.5" />,
+      content: (
+        <div className="space-y-3 text-xs text-slate-500">
+          <p>
+            <span className="font-semibold text-slate-700">Address:</span>
+            <br />Kocksgatan 49
+          </p>
+          <p>
+            <span className="font-semibold text-slate-700">Opening Hours:</span>
+            <br />Monday – Friday 12:00–17:00
+          </p>
+        </div>
+      ),
+    },
+  ];
+
   return (
-    <footer className="bg-white pt-16 pb-12 border-t border-slate-150">
+    <footer className="bg-white pt-20 pb-12 border-t border-[#E1EDF8]">
       <div className="max-w-6xl mx-auto px-6">
-        {/* Small CTA Banner */}
-
         {/* Contact Section */}
-        <div id="contact" className="border-t border-slate-100 pt-16 pb-16">
-          <h2 className="text-2xl font-extrabold text-slate-900 mb-10 tracking-tight text-center md:text-left">
-            Contact & Support
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-20">
-            {/* Card 1: Telephone Support */}
-            <div className="bg-slate-50/50 border border-slate-200/60 p-6 rounded-2xl">
-              <div className="w-10 h-10 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center mb-4">
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2.5"
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  />
-                </svg>
-              </div>
-              <h3 className="font-extrabold text-slate-900 text-base mb-3">
-                Telephone Support
-              </h3>
-              <div className="space-y-2 text-xs text-slate-600">
-                <p>
-                  <span className="font-bold text-slate-800">Phone:</span>{" "}
-                  <a
-                    href="tel:087430770"
-                    className="hover:text-secondary font-semibold"
-                  >
-                    08-743 07 70
-                  </a>
-                </p>
-                <p>
-                  <span className="font-bold text-slate-800">
-                    Telephone hours:
-                  </span>
-                  <br />
-                  Monday - Friday 12:00-19:00
-                </p>
-                <p className="text-slate-400 italic mt-2 pt-2 border-t border-slate-200/50">
-                  Please send an email at{" "}
-                  <a
-                    href="mailto:info@postbox24.se"
-                    className="hover:text-secondary font-semibold"
-                  >
-                    info@postbox24.se
-                  </a>
-                  .
-                </p>
-              </div>
-            </div>
-
-            {/* Card 2: Direct Channels */}
-            <div className="bg-slate-50/50 border border-slate-200/60 p-6 rounded-2xl">
-              <div className="w-10 h-10 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center mb-4">
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2.5"
-                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-                  />
-                </svg>
-              </div>
-              <h3 className="font-extrabold text-slate-900 text-base mb-3">
-                Direct Channels
-              </h3>
-              <div className="space-y-3 text-xs text-slate-600">
-                <p>
-                  <span className="font-bold text-slate-800">Email:</span>
-                  <br />
-                  <a
-                    href="mailto:info@postbox24.se"
-                    className="hover:text-secondary font-semibold"
-                  >
-                    info@postbox24.se
-                  </a>
-                </p>
-                <p>
-                  <span className="font-bold text-slate-800">Telegram:</span>
-                  <br />
-                  <a
-                    href="https://t.me/postbox24se"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="hover:text-secondary font-semibold"
-                  >
-                    @postbox24se
-                  </a>
-                </p>
-                <p className="pt-2 border-t border-slate-200/50">
-                  <span className="font-bold text-slate-800">SWISH:</span>{" "}
-                  <span className="font-mono bg-slate-100 px-2 py-0.5 rounded text-slate-700 font-semibold">
-                    1230541359
-                  </span>
-                </p>
-              </div>
-            </div>
-
-            {/* Card 3: Service Office */}
-            <div className="bg-slate-50/50 border border-slate-200/60 p-6 rounded-2xl">
-              <div className="w-10 h-10 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center mb-4">
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2.5"
-                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2.5"
-                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                </svg>
-              </div>
-              <h3 className="font-extrabold text-slate-900 text-base mb-3">
-                Service Office
-              </h3>
-              <div className="space-y-3 text-xs text-slate-600">
-                <p>
-                  <span className="font-bold text-slate-800">Address:</span>
-                  <br />
-                  Kocksgatan 49
-                </p>
-                <p>
-                  <span className="font-bold text-slate-800">
-                    Opening Hours:
-                  </span>
-                  <br />
-                  Monday - Friday 12:00-17:00
-                </p>
-              </div>
+        <div id="contact">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+            <div>
+              <span className="inline-block text-[#05A7F4] text-xs font-semibold tracking-[0.15em] uppercase mb-3">Contact</span>
+              <h2 className="text-3xl font-display font-normal text-[#0a1628] tracking-tight leading-tight">
+                Contact &{" "}
+                <span className="italic text-[#05A7F4]">Support</span>
+              </h2>
             </div>
           </div>
-          <div className="bg-slate-50 border border-slate-200/60 rounded-2xl p-6 flex flex-col md:flex-row items-center justify-between gap-6 mb-16 relative overflow-hidden ">
-            <div className="text-left">
-              <h3 className="text-lg font-extrabold text-slate-900 mb-1">
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-12">
+            {contacts.map((card, i) => (
+              <div
+                key={i}
+                className="reveal bg-[#F7FBFF] border border-[#E1EDF8] p-6 rounded-2xl hover:border-[#05A7F4]/25 hover:shadow-[0_4px_16px_rgba(5,167,244,0.07)] transition-all duration-300"
+                style={{ transitionDelay: `${i * 80}ms` }}
+              >
+                <div className="w-9 h-9 rounded-xl bg-[#EEF6FD] text-[#05A7F4] flex items-center justify-center mb-4">
+                  {card.icon}
+                </div>
+                <h3 className="font-bold text-[#0a1628] text-sm mb-3">{card.title}</h3>
+                {card.content}
+              </div>
+            ))}
+          </div>
+
+          {/* CTA Banner */}
+          <div className="reveal bg-[#0a1628] border border-[#1E293B] rounded-2xl p-6 md:py-7 md:px-8 flex flex-col md:flex-row items-center justify-between gap-6 mb-16 relative overflow-hidden">
+            <div className="absolute -top-12 -right-12 w-40 h-40 bg-[#05A7F4]/12 rounded-full blur-[50px] blob-1 pointer-events-none" />
+            <div className="relative z-10 text-left">
+              <h3 className="text-base font-bold text-white mb-1.5">
                 Ready to Get Your Professional Business Address?
               </h3>
-              <p className="text-slate-500 text-xs md:text-sm">
-                Setting up takes less than 5 minutes. Cancel at any time with no
-                hidden fees.
+              <p className="text-slate-400 text-sm">
+                Setting up takes less than 5 minutes. Cancel at any time with no hidden fees.
               </p>
             </div>
-            <div className="shrink-0">
+            <div className="shrink-0 relative z-10">
               <a
                 href="#pricing"
-                className="bg-secondary hover:bg-secondary-hover text-white font-bold py-3 px-6 rounded-full transition-all duration-200 shadow-sm hover:shadow text-xs inline-flex items-center gap-1.5 whitespace-nowrap"
+                className="inline-flex items-center gap-2 bg-[#05A7F4] hover:bg-[#0393d6] text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200 shadow-[0_4px_16px_rgba(5,167,244,0.4)] hover:shadow-[0_6px_24px_rgba(5,167,244,0.5)] text-sm whitespace-nowrap"
               >
                 <span>🚀</span> Start Your Address
               </a>
@@ -180,14 +128,11 @@ export default function FooterCTA() {
           </div>
         </div>
 
-        {/* Real Footer Links & Info */}
-        <div className="pt-12 border-t border-slate-100 flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
-          {/* Left copyright and details */}
-          <div className="max-w-md">
-            <h3 className="font-extrabold text-lg text-slate-900 mb-2">
-              Postbox24
-            </h3>
-            <p className="text-slate-500 text-xs leading-relaxed">
+        {/* Footer Bottom */}
+        <div className="pt-10 border-t border-[#E1EDF8] flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+          <div className="max-w-sm">
+            <h3 className="font-black text-base text-[#0a1628] mb-2">Postbox24</h3>
+            <p className="text-slate-400 text-xs leading-relaxed">
               © {new Date().getFullYear()} Postbox24. All rights reserved.
               Postbox24 provides premium virtual business addresses in Sweden,
               helping remote entrepreneurs and businesses establish a secure,
@@ -195,32 +140,17 @@ export default function FooterCTA() {
             </p>
           </div>
 
-          {/* Right legal links */}
-          <div className="flex flex-wrap gap-x-8 gap-y-2 text-xs font-semibold text-slate-500">
-            <a
-              href="#"
-              className="hover:text-secondary transition-colors duration-200"
-            >
-              Privacy Policy
-            </a>
-            <a
-              href="#"
-              className="hover:text-secondary transition-colors duration-200"
-            >
-              Terms of Service
-            </a>
-            <a
-              href="#"
-              className="hover:text-secondary transition-colors duration-200"
-            >
-              Cookie Policy
-            </a>
-            <a
-              href="#contact"
-              className="hover:text-secondary transition-colors duration-200"
-            >
-              Contact
-            </a>
+          <div className="flex flex-wrap gap-x-7 gap-y-2 text-xs font-medium text-slate-400">
+            {[
+              { href: "#", label: "Privacy Policy" },
+              { href: "#", label: "Terms of Service" },
+              { href: "#", label: "Cookie Policy" },
+              { href: "#contact", label: "Contact" },
+            ].map(({ href, label }) => (
+              <a key={label} href={href} className="hover:text-[#05A7F4] transition-colors duration-200">
+                {label}
+              </a>
+            ))}
           </div>
         </div>
       </div>

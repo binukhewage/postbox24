@@ -2,147 +2,107 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import { FiArrowRight } from "react-icons/fi";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
+    const handleScroll = () => setScrolled(window.scrollY > 24);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <nav
-      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-2rem)] max-w-6xl transition-all duration-300 ${
+      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-2rem)] max-w-6xl transition-all duration-500 ease-out ${
         scrolled
-          ? "bg-white/80 backdrop-blur-md border border-slate-200/50 shadow-lg py-3 px-6 rounded-full"
-          : "bg-white/95 border border-slate-100 shadow-md py-4 px-8 rounded-2xl md:rounded-full"
+          ? "bg-white/85 backdrop-blur-xl border border-[#E1EDF8] shadow-[0_8px_32px_rgba(5,167,244,0.08)] py-2.5 px-5 rounded-2xl"
+          : "bg-white/95 border border-[#F0F7FE] shadow-[0_2px_16px_rgba(10,22,40,0.06)] py-3.5 px-7 rounded-2xl"
       }`}
     >
       <div className="flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2">
+        <a href="#" className="flex items-center gap-2 group">
           <Image
             src="/logo.webp"
             alt="Postbox24 Logo"
             width={140}
             height={35}
             priority
-            className="w-auto h-7 object-contain"
+            className="w-auto h-7 object-contain transition-opacity duration-200 group-hover:opacity-80"
           />
         </a>
 
-        {/* Desktop Navigation Links */}
-        <div className="hidden md:flex items-center gap-8">
-          <a
-            href="#locations"
-            className="text-sm font-semibold text-slate-700 hover:text-secondary transition-colors duration-200"
-          >
-            Locations
-          </a>
-          <a
-            href="#services"
-            className="text-sm font-semibold text-slate-700 hover:text-secondary transition-colors duration-200"
-          >
-            Our Services
-          </a>
-          <a
-            href="#faq"
-            className="text-sm font-semibold text-slate-700 hover:text-secondary transition-colors duration-200"
-          >
-            FAQ
-          </a>
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center gap-1">
+          {[
+            { href: "#locations", label: "Locations" },
+            { href: "#services", label: "Our Services" },
+            { href: "#faq", label: "FAQ" },
+          ].map(({ href, label }) => (
+            <a
+              key={href}
+              href={href}
+              className="text-sm font-medium text-slate-600 hover:text-[#0a1628] hover:bg-[#F7FBFF] px-4 py-2 rounded-xl transition-all duration-200"
+            >
+              {label}
+            </a>
+          ))}
         </div>
 
-        {/* Desktop CTA Button */}
+        {/* Desktop CTA */}
         <div className="hidden md:block">
           <a
             href="#pricing"
-            className="bg-brand-dark hover:bg-slate-800 text-white text-sm font-bold py-2.5 px-6 rounded-full transition-all duration-200 shadow-sm hover:shadow-md active:scale-95 block"
+            className="group relative inline-flex items-center gap-1.5 bg-[#0a1628] text-white text-sm font-semibold py-2.5 px-5 rounded-xl transition-all duration-300 hover:bg-[#1E293B] hover:shadow-[0_4px_16px_rgba(10,22,40,0.25)] active:scale-[0.97]"
           >
             Book Now
+            <FiArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5" />
           </a>
         </div>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden p-2 text-slate-700 hover:text-secondary focus:outline-none transition-colors duration-200"
+          className="md:hidden p-2 text-slate-600 hover:text-[#05A7F4] rounded-xl hover:bg-[#F7FBFF] focus:outline-none transition-all duration-200"
           aria-label="Toggle navigation menu"
         >
-          {isOpen ? (
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2.5}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          ) : (
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2.5}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          )}
+          <div className="w-5 h-4 flex flex-col justify-between">
+            <span className={`block h-0.5 bg-current rounded-full transition-all duration-300 origin-right ${isOpen ? "rotate-[-45deg] translate-y-[7px]" : ""}`} />
+            <span className={`block h-0.5 bg-current rounded-full transition-all duration-300 ${isOpen ? "opacity-0 scale-x-0" : ""}`} />
+            <span className={`block h-0.5 bg-current rounded-full transition-all duration-300 origin-right ${isOpen ? "rotate-[45deg] -translate-y-[9px]" : ""}`} />
+          </div>
         </button>
       </div>
 
       {/* Mobile Drawer */}
-      {isOpen && (
-        <div className="md:hidden mt-4 pt-4 border-t border-slate-100 flex flex-col gap-4 animate-fadeIn">
-          <a
-            href="#locations"
-            onClick={() => setIsOpen(false)}
-            className="text-base font-semibold text-slate-700 hover:text-secondary transition-colors duration-200 py-1"
-          >
-            Locations
-          </a>
-          <a
-            href="#services"
-            onClick={() => setIsOpen(false)}
-            className="text-base font-semibold text-slate-700 hover:text-secondary transition-colors duration-200 py-1"
-          >
-            Our Services
-          </a>
-          <a
-            href="#faq"
-            onClick={() => setIsOpen(false)}
-            className="text-base font-semibold text-slate-700 hover:text-secondary transition-colors duration-200 py-1"
-          >
-            FAQ
-          </a>
+      <div className={`md:hidden overflow-hidden transition-all duration-300 ease-out ${isOpen ? "max-h-72 opacity-100 mt-4 pt-4 border-t border-[#E1EDF8]" : "max-h-0 opacity-0"}`}>
+        <div className="flex flex-col gap-1 pb-2">
+          {[
+            { href: "#locations", label: "Locations" },
+            { href: "#services", label: "Our Services" },
+            { href: "#faq", label: "FAQ" },
+          ].map(({ href, label }) => (
+            <a
+              key={href}
+              href={href}
+              onClick={() => setIsOpen(false)}
+              className="text-sm font-medium text-slate-700 hover:text-[#05A7F4] hover:bg-[#F7FBFF] px-3 py-2.5 rounded-xl transition-all duration-200"
+            >
+              {label}
+            </a>
+          ))}
           <a
             href="#pricing"
             onClick={() => setIsOpen(false)}
-            className="bg-brand-dark hover:bg-slate-800 text-white text-center font-bold py-3 rounded-xl transition-colors duration-200 mt-2 block"
+            className="bg-[#0a1628] text-white text-center font-semibold py-3 rounded-xl transition-all duration-200 hover:bg-[#1E293B] mt-2 text-sm"
           >
             Book Now
           </a>
         </div>
-      )}
+      </div>
     </nav>
   );
 }
