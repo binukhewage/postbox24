@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
 import { FiArrowRight } from "react-icons/fi";
@@ -20,8 +18,6 @@ export default function Locations() {
               Prestigious address options in Sweden's two largest business cities.
             </p>
           </div>
-
-          
         </div>
 
         {/* Location Cards */}

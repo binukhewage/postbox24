@@ -18,7 +18,6 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Pricing />
-      <HighlightsBanner />
       <Features />
       <Services />
       <Steps />

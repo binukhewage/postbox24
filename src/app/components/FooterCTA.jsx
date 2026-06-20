@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { FiPhone, FiMessageSquare, FiMapPin } from "react-icons/fi";
 
 export default function FooterCTA() {
@@ -61,16 +62,16 @@ export default function FooterCTA() {
       title: "Service Office",
       icon: <FiMapPin className="w-4.5 h-4.5" />,
       content: (
-        <div className="space-y-3 text-xs text-slate-500">
+        <address className="space-y-3 text-xs text-slate-500 not-italic">
           <p>
             <span className="font-semibold text-slate-700">Address:</span>
-            <br />Kocksgatan 49
+            <br />Kocksgatan 49, 116 24 Stockholm, Sweden
           </p>
           <p>
             <span className="font-semibold text-slate-700">Opening Hours:</span>
             <br />Monday – Friday 12:00–17:00
           </p>
-        </div>
+        </address>
       ),
     },
   ];
@@ -119,7 +120,7 @@ export default function FooterCTA() {
             </div>
             <div className="shrink-0 relative z-10">
               <a
-                href="#pricing"
+                href="/#pricing"
                 className="inline-flex items-center gap-2 bg-[#05A7F4] hover:bg-[#0393d6] text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200 shadow-[0_4px_16px_rgba(5,167,244,0.4)] hover:shadow-[0_6px_24px_rgba(5,167,244,0.5)] text-sm whitespace-nowrap"
               >
                 <span>🚀</span> Start Your Address
@@ -128,28 +129,28 @@ export default function FooterCTA() {
           </div>
         </div>
 
+        
+
         {/* Footer Bottom */}
         <div className="pt-10 border-t border-[#E1EDF8] flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
           <div className="max-w-sm">
             <h3 className="font-black text-base text-[#0a1628] mb-2">Postbox24</h3>
             <p className="text-slate-400 text-xs leading-relaxed">
               © {new Date().getFullYear()} Postbox24. All rights reserved.
-              Postbox24 provides premium virtual business addresses in Sweden,
-              helping remote entrepreneurs and businesses establish a secure,
-              professional presence.
+              Postbox24 AB • Corporate ID: 556578-1234 (fictional placeholder for illustration) • Registered Office: Stockholm, Sweden.
             </p>
           </div>
 
           <div className="flex flex-wrap gap-x-7 gap-y-2 text-xs font-medium text-slate-400">
             {[
-              { href: "#", label: "Privacy Policy" },
-              { href: "#", label: "Terms of Service" },
-              { href: "#", label: "Cookie Policy" },
-              { href: "#contact", label: "Contact" },
+              { href: "/#", label: "Privacy Policy" },
+              { href: "/#", label: "Terms of Service" },
+              { href: "/#", label: "Cookie Policy" },
+              { href: "/#contact", label: "Contact" },
             ].map(({ href, label }) => (
-              <a key={label} href={href} className="hover:text-[#05A7F4] transition-colors duration-200">
+              <Link key={label} href={href} className="hover:text-[#05A7F4] transition-colors duration-200">
                 {label}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
