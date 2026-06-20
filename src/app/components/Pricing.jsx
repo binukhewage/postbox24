@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import {
   FiMapPin,
   FiCalendar,
@@ -11,6 +12,8 @@ import {
   FiGlobe,
   FiClock,
   FiSend,
+  FiGift,
+  FiTag,
 } from "react-icons/fi";
 
 export default function Pricing() {
@@ -48,7 +51,7 @@ export default function Pricing() {
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="inline-block text-[#05A7F4] text-xs font-semibold tracking-[0.15em] uppercase mb-4">
-            Pricing
+            Pricing & OFFERS
           </span>
           <h2 className="text-4xl md:text-5xl font-display font-normal text-[#0a1628] mb-5 tracking-tight leading-tight">
             Discover Our{" "}
@@ -62,44 +65,48 @@ export default function Pricing() {
 
         {/* Pricing Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
-          {/* Card 1: Annual Bundle */}
+          {/* Card 1: Pay for 1 Year – Get 3 Months Free */}
           <article className="reveal bg-white rounded-3xl border border-[#E1EDF8] p-8 flex flex-col justify-between shadow-[0_2px_16px_rgba(5,167,244,0.06)] hover:shadow-[0_8px_32px_rgba(5,167,244,0.12)] transition-all duration-400 group relative overflow-hidden">
             <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#05A7F4]/30 to-transparent" />
             <div className="absolute top-5 right-5 bg-[#EEF6FD] text-[#05A7F4] text-[11px] font-bold px-3 py-1 rounded-lg tracking-wide">
-              Save 30%
+              Best Value
             </div>
 
             <div>
               <div className="w-11 h-11 rounded-xl bg-[#F7FBFF] border border-[#E1EDF8] flex items-center justify-center text-[#05A7F4] mb-6">
-                <FiCalendar className="w-5 h-5" />
+                <FiGift className="w-5 h-5" />
               </div>
-              <h3 className="text-xl font-bold text-[#0a1628] mb-2">
-                Annual Bundle
+              <h3 className="text-xl font-bold text-[#0a1628] mb-2 leading-snug">
+                Pay for 1 Year <br />{" "}
+                <span className="text-[#05A7F4]">Get 3 Months Free</span>
               </h3>
               <p className="text-slate-400 text-sm mb-7 leading-relaxed">
-                Sign up for 1 year and enjoy our lowest monthly rate plus
-                priority support.
+                Choose an annual subscription and receive an additional 3 months
+                completely free, giving you even more value throughout the year.
               </p>
-              <div className="mb-8">
+              <div className="bg-[#F7FBFF] border border-[#E1EDF8] rounded-2xl p-4 mb-8">
                 <span className="text-[2.75rem] font-black text-[#0a1628] tracking-tight leading-none">
-                  129
+                  12
                 </span>
-                <span className="text-slate-400 text-sm font-medium">
+                <span className="text-slate-500 text-sm font-semibold">
                   {" "}
-                  kr / month
+                  Months Paid
                 </span>
-                <div className="text-xs text-slate-400 mt-1.5 font-medium">
-                  Billed annually
+                <div className="text-xs text-[#05A7F4] mt-1.5 font-bold">
+                  + 3 Months Completely Free
                 </div>
               </div>
             </div>
 
-            <button className="w-full py-3.5 px-6 rounded-xl border border-[#E1EDF8] text-slate-600 hover:text-[#0a1628] hover:border-[#0a1628]/20 hover:bg-[#F7FBFF] font-semibold transition-all duration-200 text-sm">
-              Order Now
-            </button>
+            <Link
+              href="/#contact"
+              className="w-full py-3.5 px-6 rounded-xl border border-[#E1EDF8] text-slate-600 hover:text-[#0a1628] hover:border-[#0a1628]/20 hover:bg-[#F7FBFF] font-semibold transition-all duration-200 text-sm text-center block"
+            >
+              Claim Offer
+            </Link>
           </article>
 
-          {/* Card 2: Featured — Kista 4 Deal */}
+          {/* Card 2: Featured — Rent Your Postbox for Just 1 KR */}
           <article className="reveal reveal-delay-1 bg-[#0a1628] text-white rounded-3xl p-8 flex flex-col justify-between shadow-[0_16px_48px_rgba(10,22,40,0.3)] relative transform md:-translate-y-5 overflow-hidden border border-[#1E293B]">
             {/* Animated glow */}
             <div className="absolute -top-20 -left-20 w-60 h-60 bg-[#05A7F4]/15 rounded-full blur-[60px] blob-1 pointer-events-none" />
@@ -111,69 +118,79 @@ export default function Pricing() {
 
             <div className="relative z-10">
               <div className="w-11 h-11 rounded-xl bg-white/8 border border-white/10 flex items-center justify-center text-[#05A7F4] mb-6">
-                <FiStar className="w-5 h-5" />
+                <FiTag className="w-5 h-5" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-2">
-                Kista 4 Deal
+              <h3 className="text-xl font-bold text-white mb-2 leading-snug">
+                Rent Your Postbox <br />{" "}
+                <span className="text-[#05A7F4]">for Just 1 KR</span>
               </h3>
               <p className="text-slate-400 text-sm mb-7 leading-relaxed">
-                Ideal for growing businesses. Secure your spot in the Swedish
-                tech hub with our flexible monthly plan.
+                Start for only 1 KR during your first month when signing a
+                12-month agreement. A simple and affordable way to get started
+                with your new business address.
               </p>
-              <div className="mb-8">
+              <div className="bg-white/5 border border-white/10 rounded-2xl p-4 mb-8 relative z-10">
                 <span className="text-[2.75rem] font-black text-white tracking-tight leading-none">
-                  199
+                  1
                 </span>
-                <span className="text-slate-400 text-sm font-medium">
+                <span className="text-slate-300 text-sm font-semibold">
                   {" "}
-                  kr / month
+                  KR
                 </span>
-                <div className="text-xs text-slate-500 mt-1.5 font-medium">
-                  Cancel anytime
+                <div className="text-xs text-slate-400 mt-1.5 font-medium">
+                  First month, then standard rate
                 </div>
               </div>
             </div>
 
-            <button className="relative z-10 w-full py-3.5 px-6 rounded-xl bg-[#05A7F4] hover:bg-[#0393d6] text-white font-semibold transition-all duration-200 text-sm shadow-[0_4px_16px_rgba(5,167,244,0.4)] hover:shadow-[0_6px_24px_rgba(5,167,244,0.5)] active:scale-[0.98]">
-              Order Now
-            </button>
+            <Link
+              href="/#contact"
+              className="relative z-10 w-full py-3.5 px-6 rounded-xl bg-[#05A7F4] hover:bg-[#0393d6] text-white font-semibold transition-all duration-200 text-sm shadow-[0_4px_16px_rgba(5,167,244,0.4)] hover:shadow-[0_6px_24px_rgba(5,167,244,0.5)] active:scale-[0.98] text-center block"
+            >
+              Claim Offer
+            </Link>
           </article>
 
-          {/* Card 3: Nationwide Special */}
+          {/* Card 3: Södermalm Special Offer */}
           <article className="reveal reveal-delay-2 bg-white rounded-3xl border border-[#E1EDF8] p-8 flex flex-col justify-between shadow-[0_2px_16px_rgba(5,167,244,0.06)] hover:shadow-[0_8px_32px_rgba(5,167,244,0.12)] transition-all duration-400 group relative overflow-hidden">
             <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#05A7F4]/30 to-transparent" />
             <div className="absolute top-5 right-5 bg-[#EEF6FD] text-[#05A7F4] text-[11px] font-bold px-3 py-1 rounded-lg tracking-wide">
-              Full Suite
+              Location Promo
             </div>
 
             <div>
               <div className="w-11 h-11 rounded-xl bg-[#F7FBFF] border border-[#E1EDF8] flex items-center justify-center text-[#05A7F4] mb-6">
-                <FiShield className="w-5 h-5" />
+                <FiMapPin className="w-5 h-5" />
               </div>
-              <h3 className="text-xl font-bold text-[#0a1628] mb-2">
-                Nationwide Special
+              <h3 className="text-xl font-bold text-[#0a1628] mb-2 leading-snug">
+                Södermalm <br />{" "}
+                <span className="text-[#05A7F4]">Special Offer</span>
               </h3>
               <p className="text-slate-400 text-sm mb-7 leading-relaxed">
-                Get access to premier addresses in both Stockholm and
-                Gothenburg, including priority mail forwarding.
+                Rent a postbox at our Kocksgatan, Södermalm location for only
+                2,400 KR per year. Enjoy a premium Stockholm address at an
+                exceptional annual price.
               </p>
-              <div className="mb-8">
+              <div className="bg-[#F7FBFF] border border-[#E1EDF8] rounded-2xl p-4 mb-8">
                 <span className="text-[2.75rem] font-black text-[#0a1628] tracking-tight leading-none">
                   2,400
                 </span>
-                <span className="text-slate-400 text-sm font-medium">
+                <span className="text-slate-500 text-sm font-semibold">
                   {" "}
-                  kr / year
+                  KR / year
                 </span>
                 <div className="text-xs text-slate-400 mt-1.5 font-medium">
-                  Billed annually
+                  Kocksgatan, Södermalm
                 </div>
               </div>
             </div>
 
-            <button className="w-full py-3.5 px-6 rounded-xl border border-[#E1EDF8] text-slate-600 hover:text-[#0a1628] hover:border-[#0a1628]/20 hover:bg-[#F7FBFF] font-semibold transition-all duration-200 text-sm">
-              Order Now
-            </button>
+            <Link
+              href="/#contact"
+              className="w-full py-3.5 px-6 rounded-xl border border-[#E1EDF8] text-slate-600 hover:text-[#0a1628] hover:border-[#0a1628]/20 hover:bg-[#F7FBFF] font-semibold transition-all duration-200 text-sm text-center block"
+            >
+              Claim Offer
+            </Link>
           </article>
         </div>
 
@@ -197,7 +214,7 @@ export default function Pricing() {
             </div>
             <div className="shrink-0">
               <a
-                href="#locations"
+                href="#contact"
                 className="inline-flex items-center gap-2 bg-[#05A7F4] hover:bg-[#0393d6] text-white text-sm font-semibold py-3 px-6 rounded-xl transition-all duration-200 shadow-[0_4px_14px_rgba(5,167,244,0.35)] hover:shadow-[0_6px_20px_rgba(5,167,244,0.45)] whitespace-nowrap"
               >
                 <FiMapPin className="w-4 h-4" />
@@ -210,22 +227,48 @@ export default function Pricing() {
         {/* Additional Customer Benefits */}
         <div className="text-center max-w-2xl mx-auto mt-28 mb-16">
           <div className="reveal flex items-center justify-center gap-3 mb-4">
-            
             <span className="text-[#05A7F4] text-xs font-semibold tracking-[0.18em] uppercase">
               Additional Customer Benefits
             </span>
-            
           </div>
           <h2 className="reveal reveal-delay-1 text-4xl md:text-5xl font-display font-normal text-[#0a1628] mb-5 tracking-tight leading-tight">
-            More Than Just a <span className="italic text-[#05A7F4]">Postbox</span>
+            More Than Just a{" "}
+            <span className="italic text-[#05A7F4]">Postbox</span>
           </h2>
           <p className="reveal reveal-delay-2 text-slate-500 text-base leading-relaxed font-medium">
-            Enjoy extra services and benefits that make managing your mail easier, wherever you are.
+            Enjoy extra services and benefits that make managing your mail
+            easier, wherever you are.
           </p>
         </div>
 
         {/* Benefits Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+          <article className="reveal reveal-delay-1 bg-white rounded-3xl border border-[#E1EDF8] p-8 flex flex-col justify-between shadow-[0_2px_16px_rgba(5,167,244,0.06)] hover:shadow-[0_8px_32px_rgba(5,167,244,0.12)] transition-all duration-400 group relative overflow-hidden">
+            <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#05A7F4]/30 to-transparent" />
+            <div>
+              <div className="w-12 h-12 rounded-xl bg-[#EEF6FD] text-[#05A7F4] flex items-center justify-center mb-6 border border-[#05A7F4]/10 group-hover:bg-[#05A7F4] group-hover:text-white transition-all duration-300 shadow-sm">
+                <FiInbox className="w-5 h-5" />
+              </div>
+              <h3 className="text-lg font-bold text-[#0a1628] mb-3 leading-snug">
+                24/7 Letter Drop-Off
+              </h3>
+              <p className="text-slate-500 text-sm leading-relaxed mb-6 font-medium">
+                <span className="font-extrabold">
+                  Need to drop off important documents outside office hours?
+                </span>{" "}
+                <br /> <br /> You can bring your letters to us 24 hours a day, 7
+                days a week, making mail handling fit your schedule.
+              </p>
+            </div>
+            <div className="mt-auto bg-[#F5FAFF] border border-[#E1EDF8] rounded-xl p-3.5 flex items-center gap-2.5">
+              <div className="w-5 h-5 rounded-full bg-white border border-[#E1EDF8] flex items-center justify-center shadow-sm shrink-0">
+                <FiClock className="w-3.5 h-3.5 text-[#05A7F4]" />
+              </div>
+              <span className="text-[#05A7F4] text-[11px] font-bold tracking-wide">
+                Always open. Always convenient.
+              </span>
+            </div>
+          </article>
           {/* Benefit 1 */}
           <article className="reveal bg-white rounded-3xl border border-[#E1EDF8] p-8 flex flex-col justify-between shadow-[0_2px_16px_rgba(5,167,244,0.06)] hover:shadow-[0_8px_32px_rgba(5,167,244,0.12)] transition-all duration-400 group relative overflow-hidden">
             <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#05A7F4]/30 to-transparent" />
@@ -234,10 +277,15 @@ export default function Pricing() {
                 <FiRefreshCw className="w-5 h-5 transition-transform duration-500 group-hover:rotate-180" />
               </div>
               <h3 className="text-lg font-bold text-[#0a1628] mb-3 leading-snug">
-                Switch to Postbox24 & Get 3 Months Free
+                Switch to Postbox24 & <br /> Get 3 Months Free
               </h3>
               <p className="text-slate-500 text-sm leading-relaxed mb-6 font-medium">
-                Already have a postbox elsewhere? Transfer your existing postbox to Postbox24 and receive 3 months free of charge.
+                <span className="font-extrabold">
+                  Already have a postbox elsewhere?
+                </span>{" "}
+                <br /> <br />
+                Transfer your existing postbox to Postbox24 and receive 3 months
+                free of charge.
               </p>
             </div>
             <div className="mt-auto bg-[#F5FAFF] border border-[#E1EDF8] rounded-xl p-3.5 flex items-center gap-2.5">
@@ -251,28 +299,6 @@ export default function Pricing() {
           </article>
 
           {/* Benefit 2 */}
-          <article className="reveal reveal-delay-1 bg-white rounded-3xl border border-[#E1EDF8] p-8 flex flex-col justify-between shadow-[0_2px_16px_rgba(5,167,244,0.06)] hover:shadow-[0_8px_32px_rgba(5,167,244,0.12)] transition-all duration-400 group relative overflow-hidden">
-            <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#05A7F4]/30 to-transparent" />
-            <div>
-              <div className="w-12 h-12 rounded-xl bg-[#EEF6FD] text-[#05A7F4] flex items-center justify-center mb-6 border border-[#05A7F4]/10 group-hover:bg-[#05A7F4] group-hover:text-white transition-all duration-300 shadow-sm">
-                <FiInbox className="w-5 h-5" />
-              </div>
-              <h3 className="text-lg font-bold text-[#0a1628] mb-3 leading-snug">
-                24/7 Letter Drop-Off
-              </h3>
-              <p className="text-slate-500 text-sm leading-relaxed mb-6 font-medium">
-                Need to drop off important documents outside office hours? You can bring your letters to us 24 hours a day, 7 days a week, making mail handling fit your schedule.
-              </p>
-            </div>
-            <div className="mt-auto bg-[#F5FAFF] border border-[#E1EDF8] rounded-xl p-3.5 flex items-center gap-2.5">
-              <div className="w-5 h-5 rounded-full bg-white border border-[#E1EDF8] flex items-center justify-center shadow-sm shrink-0">
-                <FiClock className="w-3.5 h-3.5 text-[#05A7F4]" />
-              </div>
-              <span className="text-[#05A7F4] text-[11px] font-bold tracking-wide">
-                Always open. Always convenient.
-              </span>
-            </div>
-          </article>
 
           {/* Benefit 3 */}
           <article className="reveal reveal-delay-2 bg-white rounded-3xl border border-[#E1EDF8] p-8 flex flex-col justify-between shadow-[0_2px_16px_rgba(5,167,244,0.06)] hover:shadow-[0_8px_32px_rgba(5,167,244,0.12)] transition-all duration-400 group relative overflow-hidden">
@@ -285,7 +311,12 @@ export default function Pricing() {
                 Mail Scanning Wherever You Are
               </h3>
               <p className="text-slate-500 text-sm leading-relaxed mb-6 font-medium">
-                Traveling or living abroad? We can scan your incoming mail and send it to you digitally, ensuring you never miss important correspondence no matter where you are.
+                <span className="font-extrabold">
+                  Traveling or living abroad?
+                </span>{" "}
+                <br /> <br /> We can scan your incoming mail and send it to you
+                digitally, ensuring you never miss important correspondence no
+                matter where you are.
               </p>
             </div>
             <div className="mt-auto bg-[#F5FAFF] border border-[#E1EDF8] rounded-xl p-3.5 flex items-center gap-2.5">

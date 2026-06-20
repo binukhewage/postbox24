@@ -27,7 +27,11 @@ export default function Navbar() {
       >
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group" aria-label="Postbox24 Home">
+          <Link
+            href="/"
+            className="flex items-center gap-2 group"
+            aria-label="Postbox24 Home"
+          >
             <Image
               src="/logo.webp"
               alt="Postbox24 Logo"
@@ -58,7 +62,7 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden md:block">
             <Link
-              href="/#pricing"
+              href="https://postbox24.se/collections/valj-din-postbox"
               className="group relative inline-flex items-center gap-1.5 bg-[#0a1628] text-white text-sm font-semibold py-2.5 px-5 rounded-xl transition-all duration-300 hover:bg-[#1E293B] hover:shadow-[0_4px_16px_rgba(10,22,40,0.25)] active:scale-[0.97]"
             >
               Book Now
@@ -74,15 +78,23 @@ export default function Navbar() {
             aria-expanded={isOpen}
           >
             <div className="w-5 h-4 flex flex-col justify-between">
-              <span className={`block h-0.5 bg-current rounded-full transition-all duration-300 origin-right ${isOpen ? "rotate-[-45deg] translate-y-[7px]" : ""}`} />
-              <span className={`block h-0.5 bg-current rounded-full transition-all duration-300 ${isOpen ? "opacity-0 scale-x-0" : ""}`} />
-              <span className={`block h-0.5 bg-current rounded-full transition-all duration-300 origin-right ${isOpen ? "rotate-[45deg] -translate-y-[9px]" : ""}`} />
+              <span
+                className={`block h-0.5 bg-current rounded-full transition-all duration-300 origin-right ${isOpen ? "rotate-[-45deg] translate-y-[7px]" : ""}`}
+              />
+              <span
+                className={`block h-0.5 bg-current rounded-full transition-all duration-300 ${isOpen ? "opacity-0 scale-x-0" : ""}`}
+              />
+              <span
+                className={`block h-0.5 bg-current rounded-full transition-all duration-300 origin-right ${isOpen ? "rotate-[45deg] -translate-y-[9px]" : ""}`}
+              />
             </div>
           </button>
         </div>
 
         {/* Mobile Drawer */}
-        <div className={`md:hidden overflow-hidden transition-all duration-300 ease-out ${isOpen ? "max-h-80 opacity-100 mt-4 pt-4 border-t border-[#E1EDF8]" : "max-h-0 opacity-0"}`}>
+        <div
+          className={`md:hidden overflow-hidden transition-all duration-300 ease-out ${isOpen ? "max-h-80 opacity-100 mt-4 pt-4 border-t border-[#E1EDF8]" : "max-h-0 opacity-0"}`}
+        >
           <div className="flex flex-col gap-1 pb-2">
             {[
               { href: "/#services", label: "Services" },

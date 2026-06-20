@@ -8,7 +8,8 @@ import { FiArrowRight } from "react-icons/fi";
 
 export const metadata = {
   title: "Blog & Business Insights | Postbox24",
-  description: "Read the latest tips on corporate registration, virtual mail handling, compliance, and establishing a business presence in Sweden.",
+  description:
+    "Read the latest tips on corporate registration, virtual mail handling, compliance, and establishing a business presence in Sweden.",
   alternates: {
     canonical: "https://postbox24.se/blog",
   },
@@ -30,24 +31,25 @@ export default function BlogListingPage() {
     },
   ];
 
-  const breadcrumbItems = [
-    { label: "Blog", href: "/blog" },
-  ];
+  const breadcrumbItems = [{ label: "Blog", href: "/blog" }];
 
   return (
     <div className="relative min-h-screen bg-white text-[#0a1628]">
       <Navbar />
-      
+
       <main id="main-content" className="pt-32 pb-24 max-w-4xl mx-auto px-6">
         <Breadcrumbs items={breadcrumbItems} />
-        
+
         {/* Page Title */}
         <h1 className="text-4xl md:text-5xl font-display font-normal text-[#0a1628] mb-6 tracking-tight leading-tight">
-          Blog & Business <span className="italic text-[#05A7F4]">Insights</span>
+          Blog & Business{" "}
+          <span className="italic text-[#05A7F4]">Insights</span>
         </h1>
-        
+
         <p className="text-slate-500 text-base leading-relaxed mb-12 max-w-2xl">
-          Expert guides and compliance resources to help remote entrepreneurs and international companies navigate business registration and mail logistics in Sweden.
+          Expert guides and compliance resources to help remote entrepreneurs
+          and international companies navigate business registration and mail
+          logistics in Sweden.
         </p>
 
         {/* Article Cards Grid */}

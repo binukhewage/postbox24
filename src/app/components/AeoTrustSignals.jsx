@@ -1,7 +1,11 @@
 import React from "react";
 import { CheckCircle2, Shield, Calendar, UserCheck } from "lucide-react";
 
-export default function AeoTrustSignals({ takeaways = [], lastUpdated = "June 19, 2026", author = "Postbox24 Editorial Team" }) {
+export default function AeoTrustSignals({
+  takeaways = [],
+  lastUpdated = "June 19, 2026",
+  author = "Postbox24 Editorial Team",
+}) {
   return (
     <div className="bg-[#F7FBFF] border border-[#E1EDF8] rounded-2xl p-6 mb-10 shadow-[0_2px_12px_rgba(5,167,244,0.02)]">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
@@ -13,7 +17,10 @@ export default function AeoTrustSignals({ takeaways = [], lastUpdated = "June 19
           </h3>
           <ul className="space-y-2.5">
             {takeaways.map((item, idx) => (
-              <li key={idx} className="text-slate-600 text-xs md:text-sm font-medium flex items-start gap-2.5 leading-relaxed">
+              <li
+                key={idx}
+                className="text-slate-600 text-xs md:text-sm font-medium flex items-start gap-2.5 leading-relaxed"
+              >
                 <span className="w-1.5 h-1.5 rounded-full bg-[#05A7F4] mt-2 shrink-0" />
                 {item}
               </li>
@@ -30,7 +37,7 @@ export default function AeoTrustSignals({ takeaways = [], lastUpdated = "June 19
               <div>{author}</div>
             </div>
           </div>
-          
+
           <div className="flex items-center gap-2.5 pb-2 border-b border-[#E1EDF8]">
             <Calendar className="w-4 h-4 text-[#05A7F4] shrink-0" />
             <div>
@@ -43,7 +50,9 @@ export default function AeoTrustSignals({ takeaways = [], lastUpdated = "June 19
             <Shield className="w-4 h-4 text-green-600 shrink-0" />
             <div>
               <div className="font-bold text-slate-700">Trust Signal</div>
-              <div className="font-medium text-slate-600">Postbox24 AB • Reg. Sweden</div>
+              <div className="font-medium text-slate-600">
+                Postbox24 AB • Reg. Sweden
+              </div>
             </div>
           </div>
         </div>

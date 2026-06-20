@@ -26,7 +26,6 @@ export default function Steps() {
   return (
     <section className="bg-white py-24 md:py-32 overflow-hidden border-b border-[#E1EDF8]">
       <div className="max-w-6xl mx-auto px-6">
-        
         {/* Heading */}
         <div className="text-center max-w-2xl mx-auto mb-18">
           <span className="inline-block text-[#05A7F4] text-xs font-semibold tracking-[0.15em] uppercase mb-4">
@@ -64,7 +63,7 @@ export default function Steps() {
                 <div className="w-24 h-24 rounded-full bg-white border-2 border-[#E1EDF8] flex items-center justify-center mb-6 shadow-[0_6px_20px_rgba(5,167,244,0.05)] relative group hover:border-[#05A7F4]/40 hover:bg-[#05A7F4] hover:shadow-[0_12px_28px_rgba(5,167,244,0.12)] transition-all duration-300">
                   <StepIcon className="w-8 h-8 text-[#05A7F4] group-hover:text-white transition-colors duration-300" />
                 </div>
-                
+
                 <h3 className="text-base font-bold text-[#0a1628] mb-2.5">
                   {step.title}
                 </h3>

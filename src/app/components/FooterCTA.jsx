@@ -13,17 +13,26 @@ export default function FooterCTA() {
         <div className="space-y-2 text-xs text-slate-500">
           <p>
             <span className="font-semibold text-slate-700">Phone: </span>
-            <a href="tel:087430770" className="hover:text-[#05A7F4] transition-colors font-semibold">
+            <a
+              href="tel:087430770"
+              className="hover:text-[#05A7F4] transition-colors font-semibold"
+            >
               08-743 07 70
             </a>
           </p>
           <p>
-            <span className="font-semibold text-slate-700">Telephone hours:</span>
-            <br />Monday – Friday 12:00–19:00
+            <span className="font-semibold text-slate-700">
+              Telephone hours:
+            </span>
+            <br />
+            Monday – Friday 12:00–19:00
           </p>
           <p className="text-slate-400 italic pt-2 border-t border-[#E1EDF8]">
             Or email us at{" "}
-            <a href="mailto:info@postbox24.se" className="hover:text-[#05A7F4] transition-colors font-medium not-italic">
+            <a
+              href="mailto:info@postbox24.se"
+              className="hover:text-[#05A7F4] transition-colors font-medium not-italic"
+            >
               info@postbox24.se
             </a>
           </p>
@@ -38,14 +47,22 @@ export default function FooterCTA() {
           <p>
             <span className="font-semibold text-slate-700">Email:</span>
             <br />
-            <a href="mailto:info@postbox24.se" className="hover:text-[#05A7F4] transition-colors font-medium">
+            <a
+              href="mailto:info@postbox24.se"
+              className="hover:text-[#05A7F4] transition-colors font-medium"
+            >
               info@postbox24.se
             </a>
           </p>
           <p>
             <span className="font-semibold text-slate-700">Telegram:</span>
             <br />
-            <a href="https://t.me/postbox24se" target="_blank" rel="noreferrer" className="hover:text-[#05A7F4] transition-colors font-medium">
+            <a
+              href="https://t.me/postbox24se"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-[#05A7F4] transition-colors font-medium"
+            >
               @postbox24se
             </a>
           </p>
@@ -65,12 +82,32 @@ export default function FooterCTA() {
         <address className="space-y-3 text-xs text-slate-500 not-italic">
           <p>
             <span className="font-semibold text-slate-700">Address:</span>
-            <br />Kocksgatan 49, 116 24 Stockholm, Sweden
+            <br />
+            <a
+              href="https://www.google.com/maps/place/Kocksgatan+49,+116+29+Stockholm/@59.3159457,18.0835462,17z/data=!4m6!3m5!1s0x465f77f8543124c7:0x2f9b80b9a9c43370!8m2!3d59.3150352!4d18.0846841!16s%2Fg%2F11c1xh_6h6?hl=en&entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#05A7F4] hover:underline transition-colors font-medium"
+            >
+              Kocksgatan 49, 116 24 Stockholm, Sweden
+            </a>
           </p>
           <p>
             <span className="font-semibold text-slate-700">Opening Hours:</span>
-            <br />Monday – Friday 12:00–17:00
+            <br />
+            Monday – Friday 12:00–17:00
           </p>
+          <div className="pt-2 border-t border-[#E1EDF8] mt-2">
+            <a
+              href="https://www.google.com/maps/place/Kocksgatan+49,+116+29+Stockholm/@59.3159457,18.0835462,17z/data=!4m6!3m5!1s0x465f77f8543124c7:0x2f9b80b9a9c43370!8m2!3d59.3150352!4d18.0846841!16s%2Fg%2F11c1xh_6h6?hl=en&entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 bg-[#EEF6FD] hover:bg-[#EEF6FD]/80 text-[#05A7F4] text-[10px] font-bold px-2 py-0.5 rounded-lg border border-[#05A7F4]/20 transition-colors"
+            >
+              <FiMapPin className="w-3 h-3 shrink-0" />
+              Visit us to claim the offers
+            </a>
+          </div>
         </address>
       ),
     },
@@ -83,10 +120,11 @@ export default function FooterCTA() {
         <div id="contact">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
             <div>
-              <span className="inline-block text-[#05A7F4] text-xs font-semibold tracking-[0.15em] uppercase mb-3">Contact</span>
+              <span className="inline-block text-[#05A7F4] text-xs font-semibold tracking-[0.15em] uppercase mb-3">
+                Contact
+              </span>
               <h2 className="text-3xl font-display font-normal text-[#0a1628] tracking-tight leading-tight">
-                Contact &{" "}
-                <span className="italic text-[#05A7F4]">Support</span>
+                Contact & <span className="italic text-[#05A7F4]">Support</span>
               </h2>
             </div>
           </div>
@@ -101,7 +139,9 @@ export default function FooterCTA() {
                 <div className="w-9 h-9 rounded-xl bg-[#EEF6FD] text-[#05A7F4] flex items-center justify-center mb-4">
                   {card.icon}
                 </div>
-                <h3 className="font-bold text-[#0a1628] text-sm mb-3">{card.title}</h3>
+                <h3 className="font-bold text-[#0a1628] text-sm mb-3">
+                  {card.title}
+                </h3>
                 {card.content}
               </div>
             ))}
@@ -115,7 +155,8 @@ export default function FooterCTA() {
                 Ready to Get Your Professional Business Address?
               </h3>
               <p className="text-slate-400 text-sm">
-                Setting up takes less than 5 minutes. Cancel at any time with no hidden fees.
+                Setting up takes less than 5 minutes. Cancel at any time with no
+                hidden fees.
               </p>
             </div>
             <div className="shrink-0 relative z-10">
@@ -129,26 +170,31 @@ export default function FooterCTA() {
           </div>
         </div>
 
-        
-
         {/* Footer Bottom */}
         <div className="pt-10 border-t border-[#E1EDF8] flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
           <div className="max-w-sm">
-            <h3 className="font-black text-base text-[#0a1628] mb-2">Postbox24</h3>
+            <h3 className="font-black text-base text-[#0a1628] mb-2">
+              Postbox24
+            </h3>
             <p className="text-slate-400 text-xs leading-relaxed">
               © {new Date().getFullYear()} Postbox24. All rights reserved.
-              Postbox24 AB • Corporate ID: 556578-1234 (fictional placeholder for illustration) • Registered Office: Stockholm, Sweden.
+              Postbox24 AB • Corporate ID: 556578-1234 (fictional placeholder
+              for illustration) • Registered Office: Stockholm, Sweden.
             </p>
           </div>
 
           <div className="flex flex-wrap gap-x-7 gap-y-2 text-xs font-medium text-slate-400">
             {[
-              { href: "/#", label: "Privacy Policy" },
-              { href: "/#", label: "Terms of Service" },
-              { href: "/#", label: "Cookie Policy" },
-              { href: "/#contact", label: "Contact" },
+              { href: "/address-information", label: "Address Information" },
+              { href: "/rental-conditions", label: "Rental Conditions" },
+              { href: "/refund-policy", label: "Refund Policy" },
+              { href: "/privacy-policy-gdpr", label: "Privacy Policy GDPR" },
             ].map(({ href, label }) => (
-              <Link key={label} href={href} className="hover:text-[#05A7F4] transition-colors duration-200">
+              <Link
+                key={label}
+                href={href}
+                className="hover:text-[#05A7F4] transition-colors duration-200"
+              >
                 {label}
               </Link>
             ))}

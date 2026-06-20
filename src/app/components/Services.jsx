@@ -1,15 +1,15 @@
 import React from "react";
 import Link from "next/link";
-import { 
-  Briefcase, 
-  Home, 
-  Globe, 
-  MapPin, 
-  Mail, 
-  Inbox, 
-  User, 
-  FileText, 
-  ArrowRight 
+import {
+  Briefcase,
+  Home,
+  Globe,
+  MapPin,
+  Mail,
+  Inbox,
+  User,
+  FileText,
+  ArrowRight,
 } from "lucide-react";
 
 export default function Services() {
@@ -19,21 +19,21 @@ export default function Services() {
       desc: "Ideal for startups, consultants, sole proprietors, freelancers, e-commerce and growing businesses looking for a professional business address.",
       icon: Briefcase,
       image: "/business_owner.png",
-      link: "/services/business-address"
+      link: "/services/business-address",
     },
     {
       title: "Private Individuals",
       desc: "Keep your home address private and enjoy a stable mailing address, even if you move frequently.",
       icon: Home,
       image: "/private_individual.png",
-      link: "/services/virtual-mailbox"
+      link: "/services/virtual-mailbox",
     },
     {
       title: "International Companies",
       desc: "Establish a trusted Swedish business presence with a local mailing address and reliable mail handling.",
       icon: Globe,
       image: "/international_companies.png",
-      link: "/services/company-registration-address"
+      link: "/services/company-registration-address",
     },
   ];
 
@@ -41,49 +41,53 @@ export default function Services() {
     {
       title: "Business Address",
       icon: Briefcase,
-      link: "/services/business-address"
+      link: "/services/business-address",
     },
     {
       title: "Virtual Address",
       icon: MapPin,
-      link: "/services/virtual-mailbox"
+      link: "/services/virtual-mailbox",
     },
     {
       title: "Legal Mailing Address",
       icon: Mail,
-      link: "/services/company-registration-address"
+      link: "/services/company-registration-address",
     },
     {
       title: "Business Mail Handling",
       icon: Inbox,
-      link: "/services/mail-forwarding"
+      link: "/services/mail-forwarding",
     },
     {
       title: "Address for Sole Proprietorships",
       icon: User,
-      link: "/services/company-registration-address"
+      link: "/services/company-registration-address",
     },
     {
       title: "Digital Mail Management",
       icon: FileText,
-      link: "/services/mail-forwarding"
+      link: "/services/mail-forwarding",
     },
   ];
 
   return (
-    <section id="services" className="bg-white py-24 md:py-32 overflow-hidden border-y border-[#E1EDF8]">
+    <section
+      id="services"
+      className="bg-white py-24 md:py-32 overflow-hidden border-y border-[#E1EDF8]"
+    >
       <div className="max-w-6xl mx-auto px-6">
-        
         {/* Top Header Section */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="inline-block text-[#05A7F4] text-xs font-bold tracking-[0.2em] uppercase mb-4">
             WHO IS IT FOR?
           </span>
           <h2 className="text-4xl md:text-5xl font-display font-normal text-[#0a1628] mb-5 tracking-tight leading-tight">
-            A Perfect Mailing Solution for <span className="italic text-[#05A7F4]">Everyone</span>
+            A Perfect Mailing Solution for{" "}
+            <span className="italic text-[#05A7F4]">Everyone</span>
           </h2>
           <p className="text-slate-500 text-sm md:text-base leading-relaxed">
-            Whether you are building a business, protecting your privacy or expanding internationally, Postbox24 has you covered.
+            Whether you are building a business, protecting your privacy or
+            expanding internationally, Postbox24 has you covered.
           </p>
         </div>
 
@@ -136,23 +140,24 @@ export default function Services() {
         {/* Bottom Section Box */}
         <div className="reveal bg-[#F5F9FD] border border-[#E1EDF8] rounded-3xl p-8 lg:p-12 shadow-[0_4px_24px_rgba(5,167,244,0.02)]">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            
             {/* Left Info Column */}
             <div className="lg:col-span-5 flex flex-col items-start text-left">
               <span className="text-[#05A7F4] text-xs font-bold tracking-[0.2em] uppercase mb-3">
                 WHAT WE OFFER
               </span>
               <h3 className="text-3xl lg:text-4xl font-display font-normal text-[#0a1628] mb-4 leading-tight">
-                Professional Services <br /> That Work for <span className="italic text-[#05A7F4]">You</span>
+                Professional Services <br /> That Work for{" "}
+                <span className="italic text-[#05A7F4]">You</span>
               </h3>
               <p className="text-slate-500 text-sm leading-relaxed mb-8">
-                Convenient and secure solutions to receive, manage and access your mail without the need for a physical office.
+                Convenient and secure solutions to receive, manage and access
+                your mail without the need for a physical office.
               </p>
               <Link
                 href="/#pricing"
                 className="inline-flex items-center gap-2 bg-[#05A7F4] hover:bg-[#0393d6] text-white text-sm font-bold py-3 px-6 rounded-xl transition-all duration-300 shadow-[0_4px_12px_rgba(5,167,244,0.3)] hover:shadow-[0_6px_16px_rgba(5,167,244,0.4)] hover:-translate-y-0.5 active:translate-y-0"
               >
-                View All Services
+                View Our Offers
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -179,10 +184,8 @@ export default function Services() {
                 );
               })}
             </div>
-
           </div>
         </div>
-
       </div>
     </section>
   );

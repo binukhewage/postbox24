@@ -94,7 +94,9 @@ export default function FAQ() {
                   About Postbox24
                 </h3>
                 <p className="text-slate-400 text-sm leading-relaxed mb-6 font-medium">
-                  We've provided secure, flexible, and professional mail handling across Sweden for over two decades, helping entrepreneurs and companies scale remotely with confidence.
+                  We've provided secure, flexible, and professional mail
+                  handling across Sweden for over two decades, helping
+                  entrepreneurs and companies scale remotely with confidence.
                 </p>
 
                 {/* Engaging bullet details */}
@@ -104,18 +106,28 @@ export default function FAQ() {
                       <Shield className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="text-xs font-bold text-white mb-0.5">Bolagsverket Compliant</h4>
-                      <p className="text-[11px] text-slate-400 leading-relaxed font-medium">Real commercial street addresses in Stockholm & Gothenburg (never residential PO Boxes).</p>
+                      <h4 className="text-xs font-bold text-white mb-0.5">
+                        Bolagsverket Compliant
+                      </h4>
+                      <p className="text-[11px] text-slate-400 leading-relaxed font-medium">
+                        Real commercial street addresses in Stockholm &
+                        Gothenburg (never residential PO Boxes).
+                      </p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start gap-3">
                     <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-[#05A7F4] shrink-0 mt-0.5 shadow-sm">
                       <Zap className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="text-xs font-bold text-white mb-0.5">Same-Day Digitizing</h4>
-                      <p className="text-[11px] text-slate-400 leading-relaxed font-medium">Letters opened, scanned in high resolution, and sent as secure PDFs within hours.</p>
+                      <h4 className="text-xs font-bold text-white mb-0.5">
+                        Same-Day Digitizing
+                      </h4>
+                      <p className="text-[11px] text-slate-400 leading-relaxed font-medium">
+                        Letters opened, scanned in high resolution, and sent as
+                        secure PDFs within hours.
+                      </p>
                     </div>
                   </div>
 
@@ -124,8 +136,13 @@ export default function FAQ() {
                       <Lock className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="text-xs font-bold text-white mb-0.5">BankID Security</h4>
-                      <p className="text-[11px] text-slate-400 leading-relaxed font-medium">Identity verification and mail handling conform strictly to GDPR & Swedish privacy laws.</p>
+                      <h4 className="text-xs font-bold text-white mb-0.5">
+                        BankID Security
+                      </h4>
+                      <p className="text-[11px] text-slate-400 leading-relaxed font-medium">
+                        Identity verification and mail handling conform strictly
+                        to GDPR & Swedish privacy laws.
+                      </p>
                     </div>
                   </div>
                 </div>
