@@ -28,17 +28,10 @@ export default function VirtualMailboxPage() {
     },
     areaServed: "SE",
     description:
-      "Premium virtual mailbox and mail scanning service in Sweden. Manage your physical mail digitally from anywhere in the world.",
+      "Secure virtual mailbox in Stockholm & Gothenburg. Receive your physical letters digitally. Same-day scanning, PDF delivery, and secure shredding since 1999.",
     offers: {
       "@type": "Offer",
-      priceCurrency: "SEK",
-      price: "129.00",
-      priceSpecification: {
-        "@type": "UnitPriceSpecification",
-        priceType: "https://schema.org/RecurringPaymentPrice",
-        billingIncrement: 1,
-        billingPeriod: "month",
-      },
+      url: "https://postbox24.se/#pricing",
     },
   };
 
@@ -64,10 +57,10 @@ export default function VirtualMailboxPage() {
       },
       {
         "@type": "Question",
-        name: "How quickly can I get started?",
+        name: "Can I register my company using this address?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Our registration process takes under 5 minutes online. Once your registration is verified, your virtual mailbox is activated immediately and you can begin using your new Swedish address.",
+          text: "Yes, you can register a Swedish company (such as an Aktiebolag or Enskild firma) using our dedicated company registration addresses. This satisfies Skatteverket and Bolagsverket legal requirements for a physical business location.",
         },
       },
     ],
@@ -187,57 +180,7 @@ export default function VirtualMailboxPage() {
             </ul>
           </article>
 
-          {/* Pricing Comparison Table */}
-          <article className="space-y-4 pt-8">
-            <h2 className="text-2xl font-bold text-[#0a1628]">
-              Plan Features & Pricing
-            </h2>
-            <div className="overflow-x-auto border border-[#E1EDF8] rounded-xl shadow-sm">
-              <table className="w-full text-left border-collapse text-sm">
-                <thead>
-                  <tr className="bg-[#F7FBFF] border-b border-[#E1EDF8] text-[#0a1628]">
-                    <th className="p-4 font-bold">Feature</th>
-                    <th className="p-4 font-bold">Annual Plan</th>
-                    <th className="p-4 font-bold">Monthly Plan</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-[#E1EDF8]">
-                  <tr>
-                    <td className="p-4 font-medium text-slate-800">
-                      Monthly Price
-                    </td>
-                    <td className="p-4 text-green-600 font-bold">
-                      129 kr / mo
-                    </td>
-                    <td className="p-4 text-slate-800 font-semibold">
-                      199 kr / mo
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="p-4 font-medium text-slate-800">
-                      Location Options
-                    </td>
-                    <td className="p-4">Stockholm or Gothenburg</td>
-                    <td className="p-4">Stockholm or Gothenburg</td>
-                  </tr>
-                  <tr>
-                    <td className="p-4 font-medium text-slate-800">
-                      Same-Day PDF Scan
-                    </td>
-                    <td className="p-4">Yes</td>
-                    <td className="p-4">Yes</td>
-                  </tr>
-                  <tr>
-                    <td className="p-4 font-medium text-slate-800">
-                      Physical Mail Storage
-                    </td>
-                    <td className="p-4">30 days free</td>
-                    <td className="p-4">30 days free</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </article>
+          
 
           {/* Section 4: Frequently asked questions */}
           <article className="space-y-4 pt-8 border-t border-[#E1EDF8]">
