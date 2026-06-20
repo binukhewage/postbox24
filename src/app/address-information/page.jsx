@@ -80,7 +80,7 @@ export default function AddressInformationPage() {
         </h1>
 
         {/* AEO Trust Signals */}
-        <AeoTrustSignals takeaways={takeaways} lastUpdated="June 20, 2026" />
+        <AeoTrustSignals takeaways={takeaways} lastUpdated="June 20, 2026"/>
 
         {/* Introduction */}
         <div className="prose max-w-none text-slate-600 space-y-8">

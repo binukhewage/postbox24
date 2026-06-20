@@ -7,7 +7,7 @@ export default function AeoTrustSignals({
   author = "Postbox24 Editorial Team",
 }) {
   return (
-    <div className="bg-[#F7FBFF] border border-[#E1EDF8] rounded-2xl p-6 mb-10 shadow-[0_2px_12px_rgba(5,167,244,0.02)]">
+    <div className="bg-[#F7FBFF] border border-[#E1EDF8] rounded-2xl p-6 mb-10 shadow-[0_2px_12px_rgba(5,167,244,0.02)] sr-only">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
         {/* Key Takeaways */}
         <div className="lg:col-span-2">
