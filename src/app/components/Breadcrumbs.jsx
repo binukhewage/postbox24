@@ -16,7 +16,7 @@ export default function Breadcrumbs({ items = [] }) {
       "name": item.label,
       "item": item.href.startsWith("http")
         ? item.href
-        : `https://postbox24.se${item.href}`,
+        : `https://postboxoffers.com${item.href}`,
     })),
   };
 
@@ -30,7 +30,7 @@ export default function Breadcrumbs({ items = [] }) {
               href="/"
               className="hover:text-[#05A7F4] transition-colors duration-200"
             >
-              Home
+              Hem
             </Link>
           </li>
           {items.map((item, idx) => {

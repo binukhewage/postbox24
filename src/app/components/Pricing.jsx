@@ -51,15 +51,15 @@ export default function Pricing() {
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="inline-block text-[#05A7F4] text-xs font-semibold tracking-[0.15em] uppercase mb-4">
-            Pricing & OFFERS
+            Priser & Erbjudanden
           </span>
           <h2 className="text-4xl md:text-5xl font-display font-normal text-[#0a1628] mb-5 tracking-tight leading-tight">
-            Discover Our{" "}
-            <span className="italic text-[#05A7F4]">Best Deals</span>
+            Upptäck våra{" "}
+            <span className="italic text-[#05A7F4]">bästa erbjudanden</span>
           </h2>
           <p className="text-slate-500 text-base leading-relaxed">
-            Choose the plan that suits your business requirements and start
-            utilizing your prestigious Swedish address today.
+            Välj det abonnemang som passar ditt företags behov och börja
+            använda din representativa svenska adress redan idag.
           </p>
         </div>
 
@@ -69,7 +69,7 @@ export default function Pricing() {
           <article className="reveal bg-white rounded-3xl border border-[#E1EDF8] p-8 flex flex-col justify-between shadow-[0_2px_16px_rgba(5,167,244,0.06)] hover:shadow-[0_8px_32px_rgba(5,167,244,0.12)] transition-all duration-400 group relative overflow-hidden">
             <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#05A7F4]/30 to-transparent" />
             <div className="absolute top-5 right-5 bg-[#EEF6FD] text-[#05A7F4] text-[11px] font-bold px-3 py-1 rounded-lg tracking-wide">
-              Best Value
+              Bäst värde
             </div>
 
             <div>
@@ -77,12 +77,11 @@ export default function Pricing() {
                 <FiGift className="w-5 h-5" />
               </div>
               <h3 className="text-xl font-bold text-[#0a1628] mb-2 leading-snug">
-                Pay for 1 Year <br />{" "}
-                <span className="text-[#05A7F4]">Get 3 Months Free</span>
+                Betala för 1 år <br />{" "}
+                <span className="text-[#05A7F4]">få 3 månader gratis</span>
               </h3>
               <p className="text-slate-400 text-sm mb-7 leading-relaxed">
-                Choose an annual subscription and receive an additional 3 months
-                completely free, giving you even more value throughout the year.
+                Välj ett årsabonnemang och få ytterligare 3 månader helt kostnadsfritt, vilket ger dig ännu mer värde under året.
               </p>
               <div className="bg-[#F7FBFF] border border-[#E1EDF8] rounded-2xl p-4 mb-8">
                 <span className="text-[2.75rem] font-black text-[#0a1628] tracking-tight leading-none">
@@ -90,10 +89,10 @@ export default function Pricing() {
                 </span>
                 <span className="text-slate-500 text-sm font-semibold">
                   {" "}
-                  Months Paid
+                  månader betalda
                 </span>
                 <div className="text-xs text-[#05A7F4] mt-1.5 font-bold">
-                  + 3 Months Completely Free
+                  + 3 månader helt gratis
                 </div>
               </div>
             </div>
@@ -102,7 +101,7 @@ export default function Pricing() {
               href="/#contact"
               className="w-full py-3.5 px-6 rounded-xl border border-[#E1EDF8] text-slate-600 hover:text-[#0a1628] hover:border-[#0a1628]/20 hover:bg-[#F7FBFF] font-semibold transition-all duration-200 text-sm text-center block"
             >
-              Claim Offer
+              Ta del av erbjudandet
             </Link>
           </article>
 
@@ -113,7 +112,7 @@ export default function Pricing() {
             <div className="absolute -bottom-20 -right-20 w-60 h-60 bg-[#05A7F4]/10 rounded-full blur-[60px] blob-2 pointer-events-none" />
 
             <div className="absolute top-5 right-5 bg-[#05A7F4] text-white text-[11px] font-bold px-3 py-1 rounded-lg tracking-wide">
-              Popular Choice
+              Populärt val
             </div>
 
             <div className="relative z-10">
@@ -121,13 +120,11 @@ export default function Pricing() {
                 <FiTag className="w-5 h-5" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2 leading-snug">
-                Rent Your Postbox <br />{" "}
-                <span className="text-[#05A7F4]">for Just 1 KR</span>
+                Hyr din postbox <br />{" "}
+                <span className="text-[#05A7F4]">för endast 1 kr</span>
               </h3>
               <p className="text-slate-400 text-sm mb-7 leading-relaxed">
-                Start for only 1 KR during your first month when signing a
-                12-month agreement. A simple and affordable way to get started
-                with your new business address.
+                Börja för endast 1 kr under din första månad när du tecknar ett 12-månadersavtal. Ett enkelt och prisvärt sätt att komma igång.
               </p>
               <div className="bg-white/5 border border-white/10 rounded-2xl p-4 mb-8 relative z-10">
                 <span className="text-[2.75rem] font-black text-white tracking-tight leading-none">
@@ -135,10 +132,10 @@ export default function Pricing() {
                 </span>
                 <span className="text-slate-300 text-sm font-semibold">
                   {" "}
-                  KR
+                  kr
                 </span>
                 <div className="text-xs text-slate-400 mt-1.5 font-medium">
-                  First month, then standard rate
+                  Första månaden, därefter ordinarie pris
                 </div>
               </div>
             </div>
@@ -147,7 +144,7 @@ export default function Pricing() {
               href="/#contact"
               className="relative z-10 w-full py-3.5 px-6 rounded-xl bg-[#05A7F4] hover:bg-[#0393d6] text-white font-semibold transition-all duration-200 text-sm shadow-[0_4px_16px_rgba(5,167,244,0.4)] hover:shadow-[0_6px_24px_rgba(5,167,244,0.5)] active:scale-[0.98] text-center block"
             >
-              Claim Offer
+              Ta del av erbjudandet
             </Link>
           </article>
 
@@ -155,7 +152,7 @@ export default function Pricing() {
           <article className="reveal reveal-delay-2 bg-white rounded-3xl border border-[#E1EDF8] p-8 flex flex-col justify-between shadow-[0_2px_16px_rgba(5,167,244,0.06)] hover:shadow-[0_8px_32px_rgba(5,167,244,0.12)] transition-all duration-400 group relative overflow-hidden">
             <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#05A7F4]/30 to-transparent" />
             <div className="absolute top-5 right-5 bg-[#EEF6FD] text-[#05A7F4] text-[11px] font-bold px-3 py-1 rounded-lg tracking-wide">
-              Location Promo
+              Lokalkampanj
             </div>
 
             <div>
@@ -164,20 +161,18 @@ export default function Pricing() {
               </div>
               <h3 className="text-xl font-bold text-[#0a1628] mb-2 leading-snug">
                 Södermalm <br />{" "}
-                <span className="text-[#05A7F4]">Special Offer</span>
+                <span className="text-[#05A7F4]">Specialerbjudande</span>
               </h3>
               <p className="text-slate-400 text-sm mb-7 leading-relaxed">
-                Rent a postbox at our Kocksgatan, Södermalm location for only
-                2,400 KR per year. Enjoy a premium Stockholm address at an
-                exceptional annual price.
+                Hyr en postbox på vårt kontor på Kocksgatan, Södermalm för endast 2 400 kr per år. Få en attraktiv adress i Stockholm till ett oslagbart årspris.
               </p>
               <div className="bg-[#F7FBFF] border border-[#E1EDF8] rounded-2xl p-4 mb-8">
                 <span className="text-[2.75rem] font-black text-[#0a1628] tracking-tight leading-none">
-                  2,400
+                  2 400
                 </span>
                 <span className="text-slate-500 text-sm font-semibold">
                   {" "}
-                  KR / year
+                  kr / år
                 </span>
                 <div className="text-xs text-slate-400 mt-1.5 font-medium">
                   Kocksgatan, Södermalm
@@ -186,10 +181,10 @@ export default function Pricing() {
             </div>
 
             <Link
-              href="/#contact"
+              href="https://postbox24.se/collections/valj-din-postbox/products/postbox-12-man"
               className="w-full py-3.5 px-6 rounded-xl border border-[#E1EDF8] text-slate-600 hover:text-[#0a1628] hover:border-[#0a1628]/20 hover:bg-[#F7FBFF] font-semibold transition-all duration-200 text-sm text-center block"
             >
-              Claim Offer
+              Ta del av erbjudandet
             </Link>
           </article>
         </div>
@@ -200,16 +195,13 @@ export default function Pricing() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 pl-4">
             <div className="flex-1">
               <h3 className="text-base font-bold text-[#0a1628] mb-1.5">
-                Want to Redeem These Offers?
+                Vill du ta del av dessa erbjudanden?
               </h3>
               <p className="text-slate-500 text-sm leading-relaxed">
-                Visit us at one of our locations to take advantage of these
-                exclusive promotions. Our team will help you choose the right
-                solution and activate your postbox quickly.
+                Besök oss på något av våra kontor för att utnyttja dessa exklusiva kampanjer. Vårt team hjälper dig att välja rätt lösning och aktiverar din postbox snabbt.
               </p>
               <p className="text-slate-400 text-[11px] italic mt-2">
-                Certain offers may require eligibility verification or be
-                subject to specific terms and conditions.
+                Vissa erbjudanden kan kräva behörighetsverifiering eller omfattas av särskilda villkor.
               </p>
             </div>
             <div className="shrink-0">
@@ -218,7 +210,7 @@ export default function Pricing() {
                 className="inline-flex items-center gap-2 bg-[#05A7F4] hover:bg-[#0393d6] text-white text-sm font-semibold py-3 px-6 rounded-xl transition-all duration-200 shadow-[0_4px_14px_rgba(5,167,244,0.35)] hover:shadow-[0_6px_20px_rgba(5,167,244,0.45)] whitespace-nowrap"
               >
                 <FiMapPin className="w-4 h-4" />
-                Visit Us
+                Besök oss
               </a>
             </div>
           </div>
@@ -228,16 +220,15 @@ export default function Pricing() {
         <div className="text-center max-w-2xl mx-auto mt-28 mb-16">
           <div className="reveal flex items-center justify-center gap-3 mb-4">
             <span className="text-[#05A7F4] text-xs font-semibold tracking-[0.18em] uppercase">
-              Additional Customer Benefits
+              Extra kundförmåner
             </span>
           </div>
           <h2 className="reveal reveal-delay-1 text-4xl md:text-5xl font-display font-normal text-[#0a1628] mb-5 tracking-tight leading-tight">
-            More Than Just a{" "}
-            <span className="italic text-[#05A7F4]">Postbox</span>
+            Mer än bara en{" "}
+            <span className="italic text-[#05A7F4]">postbox</span>
           </h2>
           <p className="reveal reveal-delay-2 text-slate-500 text-base leading-relaxed font-medium">
-            Enjoy extra services and benefits that make managing your mail
-            easier, wherever you are.
+            Dra nytta av extra tjänster och förmåner som gör det enklare att hantera din post, oavsett var du befinner dig.
           </p>
         </div>
 
@@ -250,14 +241,13 @@ export default function Pricing() {
                 <FiInbox className="w-5 h-5" />
               </div>
               <h3 className="text-lg font-bold text-[#0a1628] mb-3 leading-snug">
-                24/7 Letter Drop-Off
+                Inlämning av brev dygnet runt
               </h3>
               <p className="text-slate-500 text-sm leading-relaxed mb-6 font-medium">
                 <span className="font-extrabold">
-                  Need to drop off important documents outside office hours?
+                  Behöver du lämna in viktiga dokument utanför kontorstid?
                 </span>{" "}
-                <br /> <br /> You can bring your letters to us 24 hours a day, 7
-                days a week, making mail handling fit your schedule.
+                <br /> <br /> Du kan lämna dina brev hos oss 24 timmar om dygnet, 7 dagar i veckan, så att posthanteringen passar ditt schema.
               </p>
             </div>
             <div className="mt-auto bg-[#F5FAFF] border border-[#E1EDF8] rounded-xl p-3.5 flex items-center gap-2.5">
@@ -265,7 +255,7 @@ export default function Pricing() {
                 <FiClock className="w-3.5 h-3.5 text-[#05A7F4]" />
               </div>
               <span className="text-[#05A7F4] text-[11px] font-bold tracking-wide">
-                Always open. Always convenient.
+                Alltids öppet. Alltid enkelt.
               </span>
             </div>
           </article>
@@ -277,15 +267,14 @@ export default function Pricing() {
                 <FiRefreshCw className="w-5 h-5 transition-transform duration-500 group-hover:rotate-180" />
               </div>
               <h3 className="text-lg font-bold text-[#0a1628] mb-3 leading-snug">
-                Switch to Postbox24 & <br /> Get 3 Months Free
+                Byt till Postbox24 & <br /> få 3 månader gratis
               </h3>
               <p className="text-slate-500 text-sm leading-relaxed mb-6 font-medium">
                 <span className="font-extrabold">
-                  Already have a postbox elsewhere?
+                  Har du redan en postbox hos en annan leverantör?
                 </span>{" "}
                 <br /> <br />
-                Transfer your existing postbox to Postbox24 and receive 3 months
-                free of charge.
+                Flytta din befintliga postbox till Postbox24 så bjuder vi på 3 månadsavgifter helt kostnadsfritt.
               </p>
             </div>
             <div className="mt-auto bg-[#F5FAFF] border border-[#E1EDF8] rounded-xl p-3.5 flex items-center gap-2.5">
@@ -293,7 +282,7 @@ export default function Pricing() {
                 <FiShield className="w-3.5 h-3.5 text-[#05A7F4]" />
               </div>
               <span className="text-[#05A7F4] text-[11px] font-bold tracking-wide">
-                Proof of your current provider may be required.
+                Kopia på avtal/faktura från din nuvarande leverantör kan behöva uppvisas.
               </span>
             </div>
           </article>
@@ -308,15 +297,13 @@ export default function Pricing() {
                 <FiGlobe className="w-5 h-5" />
               </div>
               <h3 className="text-lg font-bold text-[#0a1628] mb-3 leading-snug">
-                Mail Scanning Wherever You Are
+                Postskanning oavsett var du är
               </h3>
               <p className="text-slate-500 text-sm leading-relaxed mb-6 font-medium">
                 <span className="font-extrabold">
-                  Traveling or living abroad?
+                  Reser du mycket eller bor utomlands?
                 </span>{" "}
-                <br /> <br /> We can scan your incoming mail and send it to you
-                digitally, ensuring you never miss important correspondence no
-                matter where you are.
+                <br /> <br /> Vi kan skanna din inkommande post och skicka den digitalt till dig, så att du aldrig missar viktig korrespondens oavsett var du befinner dig.
               </p>
             </div>
             <div className="mt-auto bg-[#F5FAFF] border border-[#E1EDF8] rounded-xl p-3.5 flex items-center gap-2.5">
@@ -324,7 +311,7 @@ export default function Pricing() {
                 <FiSend className="w-3.5 h-3.5 text-[#05A7F4]" />
               </div>
               <span className="text-[#05A7F4] text-[11px] font-bold tracking-wide">
-                Stay connected. Stay informed.
+                Håll dig uppkopplad. Håll dig informerad.
               </span>
             </div>
           </article>

@@ -8,11 +8,11 @@ import JsonLd from "../../components/JsonLd";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Business Address Gothenburg | Virtual Mailbox & Registered Office",
+  title: "Företagsadress Göteborg | Virtuell postbox & Säte | Postbox24",
   description:
-    "Secure a professional business address and virtual mailbox in central Gothenburg. Build legitimacy in Sweden's industrial and logistics hub.",
+    "Skaffa en professionell företagsadress och virtuell postbox i centrala Göteborg. Skapa legitimitet i Sveriges industri- och logistikcentrum.",
   alternates: {
-    canonical: "https://postbox24.se/locations/gothenburg",
+    canonical: "https://postboxoffers.com/locations/gothenburg",
   },
 };
 
@@ -20,10 +20,10 @@ export default function GothenburgLocationPage() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://postbox24.se/locations/gothenburg/#localbusiness",
-    name: "Postbox24 Gothenburg Hub",
-    image: "https://postbox24.se/logo.webp",
-    url: "https://postbox24.se/locations/gothenburg",
+    "@id": "https://postboxoffers.com/locations/gothenburg/#localbusiness",
+    name: "Postbox24 Göteborg",
+    image: "https://postboxoffers.com/logo.webp",
+    url: "https://postboxoffers.com/locations/gothenburg",
     telephone: "08-743 07 70",
     priceRange: "$$",
     address: {
@@ -47,14 +47,14 @@ export default function GothenburgLocationPage() {
   };
 
   const breadcrumbItems = [
-    { label: "Locations", href: "/#locations" },
-    { label: "Gothenburg", href: "/locations/gothenburg" },
+    { label: "Kontor", href: "/#locations" },
+    { label: "Göteborg", href: "/locations/gothenburg" },
   ];
 
   const takeaways = [
-    "Located in Inom Vallgraven, the historical and commercial heart of Gothenburg.",
-    "Highly popular among trade, industrial, maritime, and regional e-commerce businesses.",
-    "Fully compliant with Swedish companies laws for corporate registration (säte).",
+    "Beläget Inom Vallgraven, Göteborgs historiska och kommersiella hjärta.",
+    "Mycket populärt bland handels-, industri-, sjöfarts- och regionala e-handelsföretag.",
+    "Fullt godkänt enligt svensk lagstiftning för registrering av företagets säte (Bolagsverket).",
   ];
 
   return (
@@ -67,21 +67,17 @@ export default function GothenburgLocationPage() {
 
         {/* Page Title */}
         <h1 className="text-4xl md:text-5xl font-display font-normal text-[#0a1628] mb-6 tracking-tight leading-tight">
-          Business Address in{" "}
-          <span className="italic text-[#05A7F4]">Gothenburg</span>
+          Företagsadress i{" "}
+          <span className="italic text-[#05A7F4]">Göteborg</span>
         </h1>
 
         {/* AEO Trust Signals */}
-        <AeoTrustSignals takeaways={takeaways} lastUpdated="June 19, 2026" />
+        <AeoTrustSignals takeaways={takeaways} lastUpdated="June 20, 2026" />
 
         {/* Concise Answer Block (GEO/AEO optimized) */}
         <section className="prose max-w-none text-slate-600 space-y-6">
           <p className="text-lg text-slate-800 font-semibold leading-relaxed">
-            Postbox24's Gothenburg business address service offers dynamic
-            digital mail handling and corporate head office (säte) hosting in
-            Gothenburg's central business district. Perfect for industrial
-            firms, maritime startups, and e-commerce companies seeking presence
-            in Sweden's largest port city.
+            Postbox24:s tjänst för företagsadresser i Göteborg erbjuder dynamisk digital posthantering och värdskap för företagets säte i Göteborgs centrala affärsdistrikt. Perfekt för industrifirmor, sjöfartsstartups och e-handelsföretag som vill ha närvaro i Sveriges största hamnstad.
           </p>
 
           <hr className="border-[#E1EDF8] my-8" />
@@ -89,30 +85,23 @@ export default function GothenburgLocationPage() {
           {/* District Highlights */}
           <article className="space-y-4">
             <h2 className="text-2xl font-bold text-[#0a1628]">
-              Why choose a Gothenburg address?
+              Varför välja en adress i Göteborg?
             </h2>
             <p className="leading-relaxed">
-              Gothenburg (Göteborg) is Sweden's second city and the logistics
-              and manufacturing capital of Scandinavia. The city hosts the
-              largest port in the Nordic region and acts as a gateway for global
-              trade.
+              Göteborg är Sveriges näst största stad och Skandinaviens logistik- och tillverkningscentrum. Staden har Nordens största hamn och fungerar som en port för global handel.
             </p>
             <p className="leading-relaxed">
-              Establishing a registered office or business address in central
-              Gothenburg (Inom Vallgraven) links your brand with a robust
-              culture of industrial innovation, trade excellence, and logistics
-              leadership.
+              Att etablera ett registrerat säte eller en företagsadress i centrala Göteborg (Inom Vallgraven) kopplar ditt varumärke till en stark kultur av industriell innovation, framstående handel och logistiskt ledarskap.
             </p>
           </article>
 
           {/* Services Available */}
           <article className="space-y-4 pt-6">
             <h2 className="text-2xl font-bold text-[#0a1628]">
-              Services Available in Gothenburg
+              Tillgängliga tjänster i Göteborg
             </h2>
             <p className="leading-relaxed">
-              Our Gothenburg hub offers the identical suite of services as our
-              flagship Stockholm offices:
+              Vår hubb i Göteborg erbjuder exakt samma utbud av tjänster som vårt huvudkontor i Stockholm:
             </p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 list-none pl-0">
               <li className="flex items-center gap-2 p-2 border border-[#E1EDF8] rounded-lg">
@@ -121,7 +110,7 @@ export default function GothenburgLocationPage() {
                   href="/services/virtual-mailbox"
                   className="font-semibold text-slate-800 hover:text-[#05A7F4]"
                 >
-                  Virtual Mailbox & Scanning
+                  Virtuell postbox & skanning
                 </Link>
               </li>
               <li className="flex items-center gap-2 p-2 border border-[#E1EDF8] rounded-lg">
@@ -130,7 +119,7 @@ export default function GothenburgLocationPage() {
                   href="/services/business-address"
                   className="font-semibold text-slate-800 hover:text-[#05A7F4]"
                 >
-                  Official Business Address
+                  Officiell företagsadress
                 </Link>
               </li>
               <li className="flex items-center gap-2 p-2 border border-[#E1EDF8] rounded-lg">
@@ -139,7 +128,7 @@ export default function GothenburgLocationPage() {
                   href="/services/mail-forwarding"
                   className="font-semibold text-slate-800 hover:text-[#05A7F4]"
                 >
-                  Mail Forwarding
+                  Eftersändning av post
                 </Link>
               </li>
               <li className="flex items-center gap-2 p-2 border border-[#E1EDF8] rounded-lg">
@@ -148,7 +137,7 @@ export default function GothenburgLocationPage() {
                   href="/services/company-registration-address"
                   className="font-semibold text-slate-800 hover:text-[#05A7F4]"
                 >
-                  Registered Corporate Säte
+                  Registrerat säte för företag
                 </Link>
               </li>
             </ul>
@@ -157,24 +146,20 @@ export default function GothenburgLocationPage() {
           {/* Local Information */}
           <article className="space-y-4 pt-6 border-t border-[#E1EDF8]">
             <h2 className="text-2xl font-bold text-[#0a1628]">
-              Gothenburg Hub Operational Details
+              Driftsinformation för Göteborgs-hubben
             </h2>
             <p className="leading-relaxed">
-              Gothenburg accounts are handled centrally with mail digitizing
-              executed at our automated processing centers, assuring speed and
-              security:
+              Göteborgs-konton hanteras centralt med digitalisering av post vid våra automatiserade processcenter, vilket garanterar snabbhet och säkerhet:
             </p>
             <div className="p-5 bg-slate-50 border border-[#E1EDF8] rounded-2xl text-sm space-y-2.5">
               <div>
-                <strong>Local Area:</strong> Central Gothenburg (Inom
-                Vallgraven), 411 04 Gothenburg, Sweden
+                <strong>Lokalt område:</strong> Centrala Göteborg (Inom Vallgraven), 411 04 Göteborg, Sverige
               </div>
               <div>
-                <strong>Billing Inquiries:</strong> info@postbox24.se
+                <strong>Fakturafrågor:</strong> info@postbox24.se
               </div>
               <div>
-                <strong>Mail Scanning Processing:</strong> Same-day digitizing
-                with delivery via secure PDF email attachment.
+                <strong>Skanning av post:</strong> Digitalisering samma dag med leverans via säkra PDF-bilagor till din e-post.
               </div>
             </div>
           </article>

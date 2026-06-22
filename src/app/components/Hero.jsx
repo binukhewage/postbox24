@@ -15,24 +15,24 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-6 relative z-10 w-full flex flex-col items-center text-center">
         {/* Top Kicker Badge */}
         <div className="animate-fadeSlideUp inline-flex items-center gap-2 bg-[#EEF6FD] text-[#05A7F4] text-[13px] font-bold tracking-wider px-4 py-1.5 rounded-lg mb-7 border border-[#05A7F4]/20 uppercase">
-          <span>🏷️</span> PostBoxes Since 1999
+          <span>🏷️</span> Postboxar sedan 1999
         </div>
 
         {/* Main Heading */}
         <h1 className="animate-fadeSlideUp [animation-delay:80ms] text-[clamp(2.5rem,5.5vw,4.2rem)] font-display font-normal text-[#0a1628] leading-[1.08] tracking-tight mb-8 max-w-4xl">
-          The Only{" "}
+          De enda{" "}
           <span className="italic text-[#05A7F4] block md:inline">
-            Postbox Deals & Special Offers
+            postboxerbjudandena
           </span>{" "}
-          You’ll Ever Need.
+          du någonsin kommer att behöva.
         </h1>
 
         {/* Description */}
         <p className="animate-fadeSlideUp [animation-delay:160ms] text-[1.02rem] text-slate-500 leading-relaxed mb-10 max-w-2xl">
-          Establish your official presence in Stockholm or Gothenburg at
-          unbeatable promotional rates. Save up to 30% on our annual plans,
-          enjoy free provider migration, and get premium mail scanning starting
-          at just 129 kr/month.
+          Etablera din officiella närvaro i Stockholm eller Göteborg till
+          oslagbara kampanjpriser. Spara upp till 30 % på våra årsabonnemang, få
+          gratis leverantörsbyte och få förstklassig postskanning från endast
+          129 kr/månad.
         </p>
 
         {/* CTA Buttons */}
@@ -41,7 +41,7 @@ export default function Hero() {
             href="#pricing"
             className="group inline-flex items-center justify-center gap-2 bg-[#05A7F4] text-white border border-[#E1EDF8] text-[#0a1628] font-semibold py-3.5 px-6 rounded-full transition-all duration-300 hover:shadow-[0_4px_16px_rgba(10,22,40,0.06)] active:scale-[0.98] text-sm shadow-sm"
           >
-            View Our Offers
+            Se våra erbjudanden
             <FiArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5" />
           </a>
         </div>
@@ -54,43 +54,43 @@ export default function Hero() {
               <FiGift className="w-3 h-3" />
             </span>
             <span className="text-xs font-black text-[#0a1628]">
-              Pay 1 Year, Get 3 Months FREE
+              Betala för 1 år, få 3 månader gratis
             </span>
           </div>
 
           {/* Left Floating Card */}
           <div className="hidden sm:flex absolute -left-12 top-[35%] z-20 bg-white border border-[#E1EDF8] p-5 rounded-2xl shadow-[0_12px_32px_rgba(10,22,40,0.08)] flex-col items-start gap-1 max-w-[190px] hover:translate-y-[-4px] transition-transform duration-300">
             <span className="flex items-center gap-1 text-[#05A7F4] bg-[#EEF6FD] text-[10px] font-bold px-2 py-0.5 rounded-full border border-[#05A7F4]/20">
-              <FiMapPin className="w-3 h-3 shrink-0" /> Stockholm Offer
+              <FiMapPin className="w-3 h-3 shrink-0" /> Stockholmserbjudande
             </span>
             <div className="text-[10px] text-slate-400 font-semibold mt-1">
               Södermalm Special
             </div>
             <div className="text-2xl font-black text-[#0a1628]">
-              2,400 kr
-              <span className="text-xs font-normal text-slate-400">/yr</span>
+              2 400 kr
+              <span className="text-xs font-normal text-slate-400">/år</span>
             </div>
             <div className="text-[9px] text-slate-400 leading-none">
-              Kocksgatan Location
+              Kocksgatan, Södermalm
             </div>
           </div>
 
           {/* Right Floating Card */}
           <div className="hidden sm:flex absolute -right-12 top-[20%] z-20 bg-white border border-[#E1EDF8] p-5 rounded-2xl shadow-[0_12px_32px_rgba(10,22,40,0.08)] flex-col items-start gap-1 max-w-[200px] hover:translate-y-[-4px] transition-transform duration-300">
             <span className="flex items-center gap-1 text-green-600 bg-green-50 text-[10px] font-bold px-2 py-0.5 rounded-full border border-green-200/50">
-              <FiTag className="w-3 h-3 shrink-0" /> Special Promo
+              <FiTag className="w-3 h-3 shrink-0" /> Specialkampanj
             </span>
             <div className="text-[10px] text-slate-400 font-semibold mt-1">
-              Rent for Just 1 KR
+              Hyr för endast 1 kr
             </div>
             <div className="text-2xl font-black text-green-600 leading-none">
               1 kr
               <span className="text-xs font-normal text-slate-400">
-                /first mo
+                /första mån
               </span>
             </div>
             <div className="text-[9px] text-slate-400 font-medium">
-              With 12-month contract
+              Vid 12-månadersavtal
             </div>
           </div>
 
@@ -99,7 +99,7 @@ export default function Hero() {
             <div className="relative w-full h-full rounded-2xl overflow-hidden bg-[#F7FBFF]">
               <Image
                 src="/postbox_set.png"
-                alt="Sleek metallic business postbox set"
+                alt="Stilrena postboxar i metall för företag"
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 900px"

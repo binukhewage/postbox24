@@ -7,11 +7,11 @@ import AeoTrustSignals from "../../components/AeoTrustSignals";
 import JsonLd from "../../components/JsonLd";
 
 export const metadata = {
-  title: "Business Address Sweden | Prestigious Office Locations",
+  title: "Företagsadress i Sverige | Representativa kontorsadresser",
   description:
-    "Get a prestigious business address in Stockholm or Gothenburg. Establish a professional presence for your company with flexible terms and instant setup.",
+    "Få en representativ företagsadress i Stockholm eller Göteborg. Skapa en professionell närvaro för ditt företag med flexibla villkor och direkt aktivering.",
   alternates: {
-    canonical: "https://postbox24.se/services/business-address",
+    canonical: "https://postboxoffers.com/services/business-address",
   },
 };
 
@@ -19,15 +19,15 @@ export default function BusinessAddressPage() {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": "https://postbox24.se/services/business-address/#service",
-    name: "Business Address Service",
+    "@id": "https://postboxoffers.com/services/business-address/#service",
+    name: "Företagsadresstjänst",
     provider: {
       "@type": "LocalBusiness",
-      "@id": "https://postbox24.se/#localbusiness",
+      "@id": "https://postboxoffers.com/#localbusiness",
     },
     areaServed: "SE",
     description:
-      "Prestigious physical business addresses in central Stockholm and Gothenburg for startups, consultants, and international enterprises.",
+      "Representativa fysiska företagsadresser i centrala Stockholm och Göteborg för startups, konsulter och utländska företag.",
     offers: {
       "@type": "Offer",
       priceCurrency: "SEK",
@@ -47,32 +47,32 @@ export default function BusinessAddressPage() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "What is a virtual business address in Sweden?",
+        name: "Vad är en virtuell företagsadress i Sverige?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "A virtual business address is a real, physical office location that you rent to represent your business. It allows you to list a professional address on your website, business cards, and corporate registrations while handling mail digitally.",
+          text: "En virtuell företagsadress är en verklig, fysisk kontorsadress som du hyr för att representera ditt företag. Den låter dig visa en professionell adress på din hemsida, visitkort och företagsregistreringar, medan posten hanteras digitalt.",
         },
       },
       {
         "@type": "Question",
-        name: "Can I use this address to register a company in Sweden?",
+        name: "Kan jag använda denna adress för att registrera ett företag i Sverige?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes, our business addresses are fully compliant with Swedish registry requirements (Bolagsverket and Skatteverket) and can be used as your official company registration address.",
+          text: "Ja, våra företagsadresser uppfyller alla svenska registreringskrav hos Bolagsverket och Skatteverket och kan användas som ditt företags officiella registrerade adress.",
         },
       },
     ],
   };
 
   const breadcrumbItems = [
-    { label: "Services", href: "/#services" },
-    { label: "Business Address", href: "/services/business-address" },
+    { label: "Tjänster", href: "/#services" },
+    { label: "Företagsadress", href: "/services/business-address" },
   ];
 
   const takeaways = [
-    "A prime business address in Stockholm's Östermalm district instantly builds credibility with clients and partners.",
-    "Fully compliant with Swedish registry standards (Bolagsverket) to avoid registry application rejections.",
-    "Receive and archive physical mail or choose mail forwarding to keep your operations running smoothly.",
+    "En attraktiv företagsadress på Östermalm i Stockholm bygger omedelbart förtroende hos kunder och partners.",
+    "Helt förenlig med Bolagsverkets regler för att undvika avslag på din företagsregistrering.",
+    "Ta emot och arkivera fysisk post eller välj eftersändning för att hålla verksamheten igång smidigt.",
   ];
 
   return (
@@ -86,21 +86,17 @@ export default function BusinessAddressPage() {
 
         {/* Page Title */}
         <h1 className="text-4xl md:text-5xl font-display font-normal text-[#0a1628] mb-6 tracking-tight leading-tight">
-          Business Address in{" "}
-          <span className="italic text-[#05A7F4]">Sweden</span>
+          Företagsadress i{" "}
+          <span className="italic text-[#05A7F4]">Sverige</span>
         </h1>
 
         {/* AEO Trust Signals */}
-        <AeoTrustSignals takeaways={takeaways} lastUpdated="June 19, 2026" />
+        <AeoTrustSignals takeaways={takeaways} lastUpdated="19 juni 2026" />
 
         {/* Concise Answer Block (GEO/AEO optimized) */}
         <section className="prose max-w-none text-slate-600 space-y-6">
           <p className="text-lg text-slate-800 font-semibold leading-relaxed">
-            A Swedish business address provides your enterprise with an
-            official, prestigious physical location in central Stockholm or
-            Gothenburg. This service is ideal for startups, remote consultants,
-            and international brands looking to establish a local presence and
-            satisfy legal corporate registration requirements.
+            En svensk företagsadress ger din verksamhet en officiell och representativ fysisk adress i centrala Stockholm eller Göteborg. Tjänsten är idealisk för startups, distanskonsulter och utländska varumärken som vill etablera en lokal närvaro och uppfylla lagkraven för företagsregistrering.
           </p>
 
           <hr className="border-[#E1EDF8] my-8" />
@@ -108,45 +104,33 @@ export default function BusinessAddressPage() {
           {/* Section 1: What is this service? */}
           <article className="space-y-4">
             <h2 className="text-2xl font-bold text-[#0a1628]">
-              What is a virtual business address in Sweden?
+              Vad är en Fysisk företag adress i Sverige?
             </h2>
             <p className="leading-relaxed">
-              A virtual business address is a commercial street address that
-              serves as your company's official public and legal contact point.
-              In Sweden, regulations require all registered business entities to
-              have a physical address where government agencies like
-              Bolagsverket (Swedish Companies Registration Office) and
-              Skatteverket (Swedish Tax Agency) can reach them.
+              En Fysisk företag adress är en kommersiell gatuadress som fungerar som ditt företags officiella publika och juridiska kontaktpunkt. I Sverige kräver regelverket att alla registrerade företag har en fysisk adress där myndigheter som Bolagsverket och Skatteverket kan nå dem.
             </p>
             <p className="leading-relaxed">
-              Postbox24 offers prestigious corporate addresses in central
-              Stockholm (Östermalm) and Gothenburg (Inom Vallgraven). While your
-              mail is handled at this physical site, you can operate your
-              business from any city or country.
+              Postbox24 erbjuder attraktiva företagsadresser i centrala Stockholm (Östermalm) och Göteborg (Inom Vallgraven). Medan din post hanteras på den fysiska adressen kan du driva din verksamhet från valfri stad eller land.
             </p>
           </article>
 
           {/* Section 2: How it works */}
           <article className="space-y-4 pt-6">
             <h2 className="text-2xl font-bold text-[#0a1628]">
-              How does a business address service work?
+              Hur fungerar en företagsadresstjänst?
             </h2>
             <p className="leading-relaxed">
-              Establishing your local presence is rapid and fully digital:
+              Att etablera din lokala närvaro går snabbt och är helt digitalt:
             </p>
             <ol className="list-decimal pl-5 space-y-2">
               <li>
-                <strong>Select a City:</strong> Choose between our flagship
-                Stockholm office in Östermalm or our Gothenburg hub.
+                <strong>Välj ort:</strong> Välj mellan vår flaggskeppsadress på Östermalm i Stockholm eller vår hubb i Göteborg.
               </li>
               <li>
-                <strong>Register Online:</strong> Fill out the contract using
-                BankID verification. The setup takes less than five minutes.
+                <strong>Registrera online:</strong> Fyll i avtalet enkelt med BankID-verifiering. Det tar under fem minuter.
               </li>
               <li>
-                <strong>Update Registries:</strong> Use the newly acquired
-                street address as your official corporate headquarters on
-                Skatteverket, invoices, and your public website.
+                <strong>Uppdara register:</strong> Använd din nya gatuadress som ditt företags officiella säte hos Bolagsverket/Skatteverket, på fakturor och på din hemsida.
               </li>
             </ol>
           </article>
@@ -154,24 +138,20 @@ export default function BusinessAddressPage() {
           {/* Section 3: Who is it for? */}
           <article className="space-y-4 pt-6">
             <h2 className="text-2xl font-bold text-[#0a1628]">
-              Who is this business address service for?
+              Vem är denna företagsadresstjänst till för?
             </h2>
             <p className="leading-relaxed">
-              Having an office address is vital for multiple professional
-              profiles:
+              Att ha en professionell kontorsadress är viktigt för många typer av verksamheter:
             </p>
             <ul className="list-disc pl-5 space-y-2">
               <li>
-                <strong>E-commerce Retailers:</strong> Avoid listing your
-                personal home address publicly on your online store.
+                <strong>E-handlare:</strong> Undvik att visa din privata hemadress offentligt på din webbplats.
               </li>
               <li>
-                <strong>Foreign Startups:</strong> Establish a Swedish presence
-                and easily open local bank accounts.
+                <strong>Utländska startups:</strong> Etablera en svensk närvaro och underlätta öppnandet av lokala bankkonton.
               </li>
               <li>
-                <strong>Consulting Firms:</strong> Secure a prestigious downtown
-                address to match the premium nature of your services.
+                <strong>Konsultbyråer:</strong> Säkra en representativ adress i centrum som matchar dina tjänsters höga kvalitet.
               </li>
             </ul>
           </article>
@@ -179,37 +159,32 @@ export default function BusinessAddressPage() {
           {/* Section 4: Frequently asked questions */}
           <article className="space-y-4 pt-8 border-t border-[#E1EDF8]">
             <h2 className="text-2xl font-bold text-[#0a1628]">
-              Frequently Asked Questions
+              Vanliga frågor
             </h2>
             <div className="space-y-4">
               <details className="group border-b border-[#E1EDF8] pb-4 [&[open]]:border-[#05A7F4]/30">
                 <summary className="font-semibold text-[#0a1628] hover:text-[#05A7F4] cursor-pointer list-none flex justify-between items-center py-2">
-                  <span>What is a virtual business address in Sweden?</span>
+                  <span>Vad är en virtuell företagsadress i Sverige?</span>
                   <span className="text-[#05A7F4] group-open:rotate-180 transition-transform">
                     ▼
                   </span>
                 </summary>
                 <p className="mt-2 text-slate-500 leading-relaxed text-sm">
-                  A virtual business address is a real, physical office location
-                  that you rent to represent your business. It allows you to
-                  list a professional address on your website, business cards,
-                  and corporate registrations while handling mail digitally.
+                  En virtuell företagsadress är en verklig, fysisk kontorsadress som du hyr för att representera ditt företag. Den låter dig visa en professionell adress på din hemsida, visitkort och företagsregistreringar, medan posten hanteras digitalt.
                 </p>
               </details>
 
               <details className="group border-b border-[#E1EDF8] pb-4 [&[open]]:border-[#05A7F4]/30">
                 <summary className="font-semibold text-[#0a1628] hover:text-[#05A7F4] cursor-pointer list-none flex justify-between items-center py-2">
                   <span>
-                    Can I use this address to register a company in Sweden?
+                    Kan jag använda denna adress för att registrera ett företag i Sverige?
                   </span>
                   <span className="text-[#05A7F4] group-open:rotate-180 transition-transform">
                     ▼
                   </span>
                 </summary>
                 <p className="mt-2 text-slate-500 leading-relaxed text-sm">
-                  Yes, our business addresses are fully compliant with Swedish
-                  registry requirements (Bolagsverket and Skatteverket) and can
-                  be used as your official company registration address.
+                  Ja, våra företagsadresser uppfyller alla svenska registreringskrav hos Bolagsverket och Skatteverket och kan användas som ditt företags officiella registrerade adress.
                 </p>
               </details>
             </div>

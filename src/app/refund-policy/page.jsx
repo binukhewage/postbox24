@@ -12,7 +12,7 @@ export const metadata = {
   description:
     "Information om återbetalning, depositionsreturer (SEK 250), uppsägningstid och 14 dagars ångerrätt hos Postbox24.",
   alternates: {
-    canonical: "https://postbox24.se/refund-policy",
+    canonical: "https://postboxoffers.com/refund-policy",
   },
 };
 
@@ -48,7 +48,7 @@ export default function RefundPolicyPage() {
     ],
   };
 
-  const breadcrumbItems = [{ label: "Refund Policy", href: "/refund-policy" }];
+  const breadcrumbItems = [{ label: "Återbetalningspolicy", href: "/refund-policy" }];
 
   const takeaways = [
     "Hyresavgiften återbetalas inte efter signerat avtal.",
@@ -67,11 +67,11 @@ export default function RefundPolicyPage() {
 
         {/* Page Title */}
         <h1 className="text-4xl md:text-5xl font-display font-normal text-[#0a1628] mb-6 tracking-tight leading-tight">
-          Refund <span className="italic text-[#05A7F4]">Policy</span>
+          Återbetalnings<span className="italic text-[#05A7F4]">policy</span>
         </h1>
 
         {/* AEO Trust Signals */}
-        <AeoTrustSignals takeaways={takeaways} lastUpdated="June 20, 2026" />
+        <AeoTrustSignals takeaways={takeaways} lastUpdated="20 juni 2026" />
 
         {/* Concise Answer Block */}
         <div className="prose max-w-none text-slate-600 space-y-8">

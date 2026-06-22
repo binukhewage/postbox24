@@ -7,31 +7,31 @@ import Link from "next/link";
 import { FiArrowRight } from "react-icons/fi";
 
 export const metadata = {
-  title: "Blog & Business Insights | Postbox24",
+  title: "Blogg & Företagsinsikter | Postbox24",
   description:
-    "Read the latest tips on corporate registration, virtual mail handling, compliance, and establishing a business presence in Sweden.",
+    "Läs de senaste tipsen om företagsregistrering, virtuell posthantering, regler och hur du etablerar din närvaro i Sverige.",
   alternates: {
-    canonical: "https://postbox24.se/blog",
+    canonical: "https://postboxoffers.com/blog",
   },
 };
 
 export default function BlogListingPage() {
   const articles = [
     {
-      title: "How to Choose a Virtual Mailbox in Sweden",
+      title: "Hur du väljer en virtuell postbox i Sverige",
       slug: "how-to-choose-virtual-mailbox-sweden",
-      desc: "Learn what to look for when choosing a digital mailbox service, from secure scanning standards to compliant commercial locations.",
-      date: "June 19, 2026",
+      desc: "Lär dig vad du ska tänka på när du väljer en digital postboxtjänst, från säkra skanningsstandarder till godkända kommersiella adresser.",
+      date: "19 juni 2026",
     },
     {
-      title: "How to Register a Swedish Company Using a Virtual Address",
+      title: "Hur du registrerar ett svenskt företag med en virtuell adress",
       slug: "register-company-swedish-address",
-      desc: "A step-by-step guide to registering a new Aktiebolag or Enskild firma using a virtual commercial address with Bolagsverket.",
-      date: "June 18, 2026",
+      desc: "En steg-för-steg-guide för att registrera ett nytt Aktiebolag eller en enskild firma med en virtuell kommersiell adress hos Bolagsverket.",
+      date: "18 juni 2026",
     },
   ];
 
-  const breadcrumbItems = [{ label: "Blog", href: "/blog" }];
+  const breadcrumbItems = [{ label: "Blogg", href: "/blog" }];
 
   return (
     <div className="relative min-h-screen bg-white text-[#0a1628]">
@@ -42,14 +42,11 @@ export default function BlogListingPage() {
 
         {/* Page Title */}
         <h1 className="text-4xl md:text-5xl font-display font-normal text-[#0a1628] mb-6 tracking-tight leading-tight">
-          Blog & Business{" "}
-          <span className="italic text-[#05A7F4]">Insights</span>
+          Blogg & <span className="italic text-[#05A7F4]">företagsinsikter</span>
         </h1>
 
         <p className="text-slate-500 text-base leading-relaxed mb-12 max-w-2xl">
-          Expert guides and compliance resources to help remote entrepreneurs
-          and international companies navigate business registration and mail
-          logistics in Sweden.
+          Experthandböcker och information om regelverk som hjälper distansentreprenörer och utländska företag att navigera kring företagsregistrering och postlogistik i Sverige.
         </p>
 
         {/* Article Cards Grid */}
@@ -74,7 +71,7 @@ export default function BlogListingPage() {
                 href={`/blog/${post.slug}`}
                 className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0a1628] group-hover:text-[#05A7F4] transition-colors mt-4"
               >
-                Read Article
+                Läs artikeln
                 <FiArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5" />
               </Link>
             </article>

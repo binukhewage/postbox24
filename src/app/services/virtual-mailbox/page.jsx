@@ -8,11 +8,11 @@ import JsonLd from "../../components/JsonLd";
 import { Check } from "lucide-react";
 
 export const metadata = {
-  title: "Virtual Mailbox Sweden | Digital Mail Scanning & Handling",
+  title: "Virtuell postbox i Sverige | Digital postskanning & hantering",
   description:
-    "Secure virtual mailbox in Stockholm & Gothenburg. Receive your physical letters digitally. Same-day scanning, PDF delivery, and secure shredding since 1999.",
+    "Säker virtuell postbox i Stockholm & Göteborg. Ta emot dina fysiska brev digitalt. Skanning samma dag, PDF-leverans och säker makulering sedan 1999.",
   alternates: {
-    canonical: "https://postbox24.se/services/virtual-mailbox",
+    canonical: "https://postboxoffers.com/services/virtual-mailbox",
   },
 };
 
@@ -20,18 +20,18 @@ export default function VirtualMailboxPage() {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": "https://postbox24.se/services/virtual-mailbox/#service",
-    name: "Virtual Mailbox Service",
+    "@id": "https://postboxoffers.com/services/virtual-mailbox/#service",
+    name: "Virtuell postboxtjänst",
     provider: {
       "@type": "LocalBusiness",
-      "@id": "https://postbox24.se/#localbusiness",
+      "@id": "https://postboxoffers.com/#localbusiness",
     },
     areaServed: "SE",
     description:
-      "Secure virtual mailbox in Stockholm & Gothenburg. Receive your physical letters digitally. Same-day scanning, PDF delivery, and secure shredding since 1999.",
+      "Säker virtuell postbox i Stockholm & Göteborg. Ta emot dina fysiska brev digitalt. Skanning samma dag, PDF-leverans och säker makulering sedan 1999.",
     offers: {
       "@type": "Offer",
-      url: "https://postbox24.se/#pricing",
+      url: "https://postboxoffers.com/#pricing",
     },
   };
 
@@ -41,40 +41,40 @@ export default function VirtualMailboxPage() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "What is a virtual mailbox in Sweden?",
+        name: "Vad är en virtuell postbox i Sverige?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "A virtual mailbox is a service that provides you with a professional mailing address in Sweden where your mail is received, sorted, digitally scanned, and sent to you as a high-resolution PDF file. This allows you to manage physical mail from anywhere in the world without a physical office.",
+          text: "En virtuell postbox är en tjänst som ger dig en professionell postadress i Sverige där din post tas emot, sorteras, skannas digitalt och skickas till dig som en högupplöst PDF-fil. Detta gör att du kan hantera din fysiska post var som helst i världen utan ett fysiskt kontor.",
         },
       },
       {
         "@type": "Question",
-        name: "How does mail forwarding work?",
+        name: "Hur fungerar eftersändning av post?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "When physical mail arrives at our secure sorting facility, we register it and send you an immediate notification. Depending on your preference, we can open and scan the contents, forward the original letter to another address, or archive it securely.",
+          text: "När fysisk post anländer till vår säkra sorteringsanläggning registrerar vi den och skickar en avisering direkt. Beroende på dina önskemål kan vi öppna och skanna innehållet, eftersända originalbrevet till en annan adress eller arkivera det säkert.",
         },
       },
       {
         "@type": "Question",
-        name: "Can I register my company using this address?",
+        name: "Kan jag registrera mitt företag med denna adress?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes, you can register a Swedish company (such as an Aktiebolag or Enskild firma) using our dedicated company registration addresses. This satisfies Skatteverket and Bolagsverket legal requirements for a physical business location.",
+          text: "Ja, du kan registrera ett svenskt företag (som ett aktiebolag eller en enskild firma) med våra dedikerade företagsadresser. Detta uppfyller Skatteverkets och Bolagsverkets lagkrav på en fysisk verksamhetsadress.",
         },
       },
     ],
   };
 
   const breadcrumbItems = [
-    { label: "Services", href: "/#services" },
-    { label: "Virtual Mailbox", href: "/services/virtual-mailbox" },
+    { label: "Tjänster", href: "/#services" },
+    { label: "Virtuell postbox", href: "/services/virtual-mailbox" },
   ];
 
   const takeaways = [
-    "Secure digital mail scanning saves up to 80% compared to renting a physical office in Stockholm.",
-    "All letters are processed in a highly secure environment to protect your privacy and corporate data.",
-    "Flexible plans let you cancel or upgrade your digital mailbox service at any time with no hidden fees.",
+    "Säker digital postskanning sparar upp till 80 % jämfört med att hyra ett fysiskt kontor i Stockholm.",
+    "Alla brev hanteras i en mycket säker miljö för att skydda din integritet och företagets data.",
+    "Flexibla abonnemang låter dig avsluta eller uppgradera din digitala postbox när som helst utan dolda avgifter.",
   ];
 
   return (
@@ -88,21 +88,17 @@ export default function VirtualMailboxPage() {
 
         {/* Page Title */}
         <h1 className="text-4xl md:text-5xl font-display font-normal text-[#0a1628] mb-6 tracking-tight leading-tight">
-          Virtual Mailbox in{" "}
-          <span className="italic text-[#05A7F4]">Sweden</span>
+          Virtuell postbox i{" "}
+          <span className="italic text-[#05A7F4]">Sverige</span>
         </h1>
 
         {/* AEO Trust Signals */}
-        <AeoTrustSignals takeaways={takeaways} lastUpdated="June 19, 2026" />
+        <AeoTrustSignals takeaways={takeaways} lastUpdated="19 juni 2026" />
 
         {/* Concise Answer Block (GEO/AEO optimized) */}
         <section className="prose max-w-none text-slate-600 space-y-6">
           <p className="text-lg text-slate-800 font-semibold leading-relaxed">
-            A virtual mailbox provides remote businesses, consultants, and
-            individuals with a professional Swedish mailing address where
-            incoming letters are received, digitized, and securely forwarded
-            online. It allows you to manage all official correspondence
-            remotely, without the cost of leasing a physical office.
+            En virtuell postbox ger distansföretag, konsulter och privatpersoner en professionell svensk postadress där inkommande brev tas emot, digitaliseras och eftersänds säkert online. Det gör att du kan hantera all officiell korrespondens på distans, utan kostnaden för att hyra ett fysiskt kontor.
           </p>
 
           <hr className="border-[#E1EDF8] my-8" />
@@ -110,47 +106,37 @@ export default function VirtualMailboxPage() {
           {/* Section 1: What is this service? */}
           <article className="space-y-4">
             <h2 className="text-2xl font-bold text-[#0a1628]">
-              What is a virtual mailbox in Sweden?
+              Vad är en virtuell postbox i Sverige?
             </h2>
             <p className="leading-relaxed">
-              In Sweden, a virtual mailbox acts as a fully compliant digital
-              proxy for physical mail. When governmental bodies, banks, or
-              clients send mail to your designated address in Stockholm or
-              Gothenburg, our professional handlers receive the mail at a secure
-              location.
+              I Sverige fungerar en virtuell postbox som ett helt godkänt digitalt alternativ för fysisk post. När myndigheter, banker eller kunder skickar post till din angivna adress i Stockholm eller Göteborg, tar våra professionella medarbetare emot den på en säker plats.
             </p>
             <p className="leading-relaxed">
-              We process each piece of mail using specialized scanning hardware,
-              converting physical pages into searchable PDF documents. These
-              files are then uploaded to a secure digital portal or emailed
-              directly to you, maintaining compliance and secrecy.
+              Vi behandlar varje brev med specialiserad skanningsutrustning och omvandlar fysiska sidor till sökbara PDF-dokument. Dessa filer laddas sedan upp till en säker digital portal eller skickas direkt till dig via e-post, vilket garanterar sekretess och regelefterlevnad.
             </p>
           </article>
 
           {/* Section 2: How it works */}
           <article className="space-y-4 pt-6">
             <h2 className="text-2xl font-bold text-[#0a1628]">
-              How does mail forwarding and scanning work?
+              Hur fungerar eftersändning och postskanning?
             </h2>
             <p className="leading-relaxed">
-              Our automated and secure workflow ensures you never miss a
-              critical document. The process follows these three simple steps:
+              Vårt automatiserade och säkra arbetsflöde säkerställer att du aldrig missar ett viktigt dokument. Processen sker i tre enkla steg:
             </p>
             <ol className="list-decimal pl-5 space-y-2">
               <li>
-                <strong>Mail Reception:</strong> Your mail arrives at our
-                professional mailrooms located in prime Stockholm (Östermalm) or
-                Gothenburg (Inom Vallgraven) districts.
+                <strong>Postmottagning:</strong> Din post anländer till våra
+                professionella postkontor i attraktiva områden i Stockholm (Östermalm) eller
+                Göteborg (Inom Vallgraven).
               </li>
               <li>
-                <strong>Digital Scanning:</strong> We scan the envelopes and
-                document pages into high-resolution, secure PDF files
-                immediately.
+                <strong>Digital skanning:</strong> Vi skannar omedelbart kuvert och
+                dokumentsidor till högupplösta och säkra PDF-filer.
               </li>
               <li>
-                <strong>Instant Access:</strong> You receive an email
-                notification containing the secure PDF attachment, enabling
-                immediate review and action wherever you are in the world.
+                <strong>Direkt åtkomst:</strong> Du får en e-postavisering med den
+                säkra PDF-filen bifogad, så att du kan läsa och agera direkt, oavsett var i världen du befinner dig.
               </li>
             </ol>
           </article>
@@ -158,24 +144,23 @@ export default function VirtualMailboxPage() {
           {/* Section 3: Who is it for? */}
           <article className="space-y-4 pt-6">
             <h2 className="text-2xl font-bold text-[#0a1628]">
-              Who is this service for?
+              Vem är den här tjänsten till för?
             </h2>
             <p className="leading-relaxed">
-              A virtual mailbox is designed to meet the demands of modern remote
-              operations. It is particularly beneficial for:
+              En virtuell postbox är utformad för att möta kraven för modern distansverksamhet. Den är särskilt fördelaktig för:
             </p>
             <ul className="list-disc pl-5 space-y-2">
               <li>
-                <strong>International Businesses:</strong> Establish a strategic
-                business presence in Stockholm without high overhead costs.
+                <strong>Utländska företag:</strong> Etablera en strategisk
+                närvaro i Stockholm eller Göteborg utan höga fasta kostnader.
               </li>
               <li>
-                <strong>Startups & Consultants:</strong> Keep your home address
-                private by using a registered commercial address.
+                <strong>Startups & konsulter:</strong> Håll din hemadress
+                privat genom att använda en registrerad kommersiell adress.
               </li>
               <li>
-                <strong>Digital Nomads:</strong> Keep receiving Swedish agency
-                mail (like Skatteverket or Bolagsverket) while traveling abroad.
+                <strong>Digitala nomader:</strong> Fortsätt ta emot myndighetspost
+                (från t.ex. Skatteverket eller Bolagsverket) medan du reser utomlands.
               </li>
             </ul>
           </article>
@@ -185,53 +170,42 @@ export default function VirtualMailboxPage() {
           {/* Section 4: Frequently asked questions */}
           <article className="space-y-4 pt-8 border-t border-[#E1EDF8]">
             <h2 className="text-2xl font-bold text-[#0a1628]">
-              Frequently Asked Questions
+              Vanliga frågor
             </h2>
             <div className="space-y-4">
               <details className="group border-b border-[#E1EDF8] pb-4 [&[open]]:border-[#05A7F4]/30">
                 <summary className="font-semibold text-[#0a1628] hover:text-[#05A7F4] cursor-pointer list-none flex justify-between items-center py-2">
-                  <span>What is a virtual mailbox in Sweden?</span>
+                  <span>Vad är en virtuell postbox i Sverige?</span>
                   <span className="text-[#05A7F4] group-open:rotate-180 transition-transform">
                     ▼
                   </span>
                 </summary>
                 <p className="mt-2 text-slate-500 leading-relaxed text-sm">
-                  A virtual mailbox is a service that provides you with a
-                  professional mailing address in Sweden where your mail is
-                  received, sorted, digitally scanned, and sent to you as a
-                  high-resolution PDF file. This allows you to manage physical
-                  mail from anywhere in the world without a physical office.
+                  En virtuell postbox är en tjänst som ger dig en professionell postadress i Sverige där din post tas emot, sorteras, skannas digitalt och skickas till dig som en högupplöst PDF-fil. Detta gör att du kan hantera din fysiska post var som helst i världen utan ett fysiskt kontor.
                 </p>
               </details>
 
               <details className="group border-b border-[#E1EDF8] pb-4 [&[open]]:border-[#05A7F4]/30">
                 <summary className="font-semibold text-[#0a1628] hover:text-[#05A7F4] cursor-pointer list-none flex justify-between items-center py-2">
-                  <span>How does mail forwarding work?</span>
+                  <span>Hur fungerar eftersändning av post?</span>
                   <span className="text-[#05A7F4] group-open:rotate-180 transition-transform">
                     ▼
                   </span>
                 </summary>
                 <p className="mt-2 text-slate-500 leading-relaxed text-sm">
-                  When physical mail arrives at our secure sorting facility, we
-                  register it and send you an immediate notification. Depending
-                  on your preference, we can open and scan the contents, forward
-                  the original letter to another address, or archive it
-                  securely.
+                  När fysisk post anländer till vår säkra sorteringsanläggning registrerar vi den och skickar en avisering direkt. Beroende på dina önskemål kan vi öppna och skanna innehållet, eftersända originalbrevet till en annan adress eller arkivera det säkert.
                 </p>
               </details>
 
               <details className="group border-b border-[#E1EDF8] pb-4 [&[open]]:border-[#05A7F4]/30">
                 <summary className="font-semibold text-[#0a1628] hover:text-[#05A7F4] cursor-pointer list-none flex justify-between items-center py-2">
-                  <span>Can I register my company using this address?</span>
+                  <span>Kan jag registrera mitt företag med denna adress?</span>
                   <span className="text-[#05A7F4] group-open:rotate-180 transition-transform">
                     ▼
                   </span>
                 </summary>
                 <p className="mt-2 text-slate-500 leading-relaxed text-sm">
-                  Yes, you can register a Swedish company (such as an Aktiebolag
-                  or Enskild firma) using our dedicated company registration
-                  addresses. This satisfies Skatteverket and Bolagsverket legal
-                  requirements for a physical business location.
+                  Ja, du kan registrera ett svenskt företag (som ett aktiebolag eller en enskild firma) med våra dedikerade företagsadresser. Detta uppfyller Skatteverkets och Bolagsverkets lagkrav på en fysisk verksamhetsadress.
                 </p>
               </details>
             </div>

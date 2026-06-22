@@ -7,12 +7,12 @@ import { FiPhone, FiMessageSquare, FiMapPin } from "react-icons/fi";
 export default function FooterCTA() {
   const contacts = [
     {
-      title: "Telephone Support",
+      title: "Telefonsupport",
       icon: <FiPhone className="w-4.5 h-4.5" />,
       content: (
         <div className="space-y-2 text-xs text-slate-500">
           <p>
-            <span className="font-semibold text-slate-700">Phone: </span>
+            <span className="font-semibold text-slate-700">Telefon: </span>
             <a
               href="tel:087430770"
               className="hover:text-[#05A7F4] transition-colors font-semibold"
@@ -22,13 +22,13 @@ export default function FooterCTA() {
           </p>
           <p>
             <span className="font-semibold text-slate-700">
-              Telephone hours:
+              Telefontider:
             </span>
             <br />
-            Monday – Friday 12:00–19:00
+            Måndag – fredag 12:00–19:00
           </p>
           <p className="text-slate-400 italic pt-2 border-t border-[#E1EDF8]">
-            Or email us at{" "}
+            Eller mejla oss på{" "}
             <a
               href="mailto:info@postbox24.se"
               className="hover:text-[#05A7F4] transition-colors font-medium not-italic"
@@ -40,12 +40,12 @@ export default function FooterCTA() {
       ),
     },
     {
-      title: "Direct Channels",
+      title: "Direktkanaler",
       icon: <FiMessageSquare className="w-4.5 h-4.5" />,
       content: (
         <div className="space-y-3 text-xs text-slate-500">
           <p>
-            <span className="font-semibold text-slate-700">Email:</span>
+            <span className="font-semibold text-slate-700">E-post:</span>
             <br />
             <a
               href="mailto:info@postbox24.se"
@@ -76,12 +76,12 @@ export default function FooterCTA() {
       ),
     },
     {
-      title: "Service Office",
+      title: "Servicekontor",
       icon: <FiMapPin className="w-4.5 h-4.5" />,
       content: (
         <address className="space-y-3 text-xs text-slate-500 not-italic">
           <p>
-            <span className="font-semibold text-slate-700">Address:</span>
+            <span className="font-semibold text-slate-700">Adress:</span>
             <br />
             <a
               href="https://www.google.com/maps/place/Kocksgatan+49,+116+29+Stockholm/@59.3159457,18.0835462,17z/data=!4m6!3m5!1s0x465f77f8543124c7:0x2f9b80b9a9c43370!8m2!3d59.3150352!4d18.0846841!16s%2Fg%2F11c1xh_6h6?hl=en&entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D"
@@ -89,13 +89,13 @@ export default function FooterCTA() {
               rel="noopener noreferrer"
               className="hover:text-[#05A7F4] hover:underline transition-colors font-medium"
             >
-              Kocksgatan 49, 116 24 Stockholm, Sweden
+              Kocksgatan 49, 116 24 Stockholm, Sverige
             </a>
           </p>
           <p>
-            <span className="font-semibold text-slate-700">Opening Hours:</span>
+            <span className="font-semibold text-slate-700">Öppettider:</span>
             <br />
-            Monday – Friday 12:00–17:00
+            Måndag – fredag 12:00–17:00
           </p>
           <div className="pt-2 border-t border-[#E1EDF8] mt-2">
             <a
@@ -105,7 +105,7 @@ export default function FooterCTA() {
               className="inline-flex items-center gap-1 bg-[#EEF6FD] hover:bg-[#EEF6FD]/80 text-[#05A7F4] text-[10px] font-bold px-2 py-0.5 rounded-lg border border-[#05A7F4]/20 transition-colors"
             >
               <FiMapPin className="w-3 h-3 shrink-0" />
-              Visit us to claim the offers
+              Besök oss för att ta del av erbjudandena
             </a>
           </div>
         </address>
@@ -121,10 +121,10 @@ export default function FooterCTA() {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
             <div>
               <span className="inline-block text-[#05A7F4] text-xs font-semibold tracking-[0.15em] uppercase mb-3">
-                Contact
+                Kontakt
               </span>
               <h2 className="text-3xl font-display font-normal text-[#0a1628] tracking-tight leading-tight">
-                Contact & <span className="italic text-[#05A7F4]">Support</span>
+                Kontakt & <span className="italic text-[#05A7F4]">Support</span>
               </h2>
             </div>
           </div>
@@ -152,11 +152,10 @@ export default function FooterCTA() {
             <div className="absolute -top-12 -right-12 w-40 h-40 bg-[#05A7F4]/12 rounded-full blur-[50px] blob-1 pointer-events-none" />
             <div className="relative z-10 text-left">
               <h3 className="text-base font-bold text-white mb-1.5">
-                Ready to Get Your Professional Business Address?
+                Redo att skaffa en professionell företagsadress?
               </h3>
               <p className="text-slate-400 text-sm">
-                Setting up takes less than 5 minutes. Cancel at any time with no
-                hidden fees.
+                Det tar mindre än 5 minuter att komma igång. Avsluta när som helst utan dolda avgifter.
               </p>
             </div>
             <div className="shrink-0 relative z-10">
@@ -164,7 +163,7 @@ export default function FooterCTA() {
                 href="/#pricing"
                 className="inline-flex items-center gap-2 bg-[#05A7F4] hover:bg-[#0393d6] text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200 shadow-[0_4px_16px_rgba(5,167,244,0.4)] hover:shadow-[0_6px_24px_rgba(5,167,244,0.5)] text-sm whitespace-nowrap"
               >
-                <span>🚀</span> Start Your Address
+                <span>🚀</span> Starta din adress
               </a>
             </div>
           </div>
@@ -177,18 +176,18 @@ export default function FooterCTA() {
               Postbox24
             </h3>
             <p className="text-slate-400 text-xs leading-relaxed">
-              © {new Date().getFullYear()} Postbox24. All rights reserved.
-              Postbox24 AB • Corporate ID: 556578-1234 (fictional placeholder
-              for illustration) • Registered Office: Stockholm, Sweden.
+              © {new Date().getFullYear()} Postbox24. Alla rättigheter förbehållna.
+              Postbox24 AB • Org.nr: 556578-1234 (fiktiv platshållare
+              för illustration) • Säte: Stockholm.
             </p>
           </div>
 
           <div className="flex flex-wrap gap-x-7 gap-y-2 text-xs font-medium text-slate-400">
             {[
-              { href: "/address-information", label: "Address Information" },
-              { href: "/rental-conditions", label: "Rental Conditions" },
-              { href: "/refund-policy", label: "Refund Policy" },
-              { href: "/privacy-policy-gdpr", label: "Privacy Policy GDPR" },
+              { href: "/address-information", label: "Adressinformation" },
+              { href: "/rental-conditions", label: "Hyresvillkor" },
+              { href: "/refund-policy", label: "Återbetalningspolicy" },
+              { href: "/privacy-policy-gdpr", label: "Integritetspolicy & GDPR" },
             ].map(({ href, label }) => (
               <Link
                 key={label}

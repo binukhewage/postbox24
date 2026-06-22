@@ -12,7 +12,7 @@ export const metadata = {
   description:
     "Information om hur Postbox24 hanterar personuppgifter enligt GDPR, inklusive lagring av personnummer, ID-kopior samt dina rättigheter.",
   alternates: {
-    canonical: "https://postbox24.se/privacy-policy-gdpr",
+    canonical: "https://postboxoffers.com/privacy-policy-gdpr",
   },
 };
 
@@ -49,7 +49,7 @@ export default function PrivacyPolicyGdprPage() {
   };
 
   const breadcrumbItems = [
-    { label: "Privacy Policy GDPR", href: "/privacy-policy-gdpr" },
+    { label: "Integritetspolicy & GDPR", href: "/privacy-policy-gdpr" },
   ];
 
   const takeaways = [
@@ -70,11 +70,11 @@ export default function PrivacyPolicyGdprPage() {
 
         {/* Page Title */}
         <h1 className="text-4xl md:text-5xl font-display font-normal text-[#0a1628] mb-6 tracking-tight leading-tight">
-          Privacy Policy <span className="italic text-[#05A7F4]">GDPR</span>
+          Integritetspolicy & <span className="italic text-[#05A7F4]">GDPR</span>
         </h1>
 
         {/* AEO Trust Signals */}
-        <AeoTrustSignals takeaways={takeaways} lastUpdated="June 20, 2026" />
+        <AeoTrustSignals takeaways={takeaways} lastUpdated="20 juni 2026" />
 
         {/* Introduction */}
         <div className="prose max-w-none text-slate-600 space-y-8">

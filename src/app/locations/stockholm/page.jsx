@@ -8,11 +8,11 @@ import JsonLd from "../../components/JsonLd";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Business Address Stockholm | Virtual Mailbox & Registered Office",
+  title: "Företagsadress Stockholm | Virtuell postbox & Säte | Postbox24",
   description:
-    "Get a prestigious business address and virtual mailbox in Stockholm's premium commercial hubs (Östermalm, Södermalm). Fully compliant company registration.",
+    "Få en representativ företagsadress och virtuell postbox i Stockholms attraktiva områden (Östermalm, Södermalm). Fullt godkänd företagsregistrering.",
   alternates: {
-    canonical: "https://postbox24.se/locations/stockholm",
+    canonical: "https://postboxoffers.com/locations/stockholm",
   },
 };
 
@@ -20,10 +20,10 @@ export default function StockholmLocationPage() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://postbox24.se/locations/stockholm/#localbusiness",
+    "@id": "https://postboxoffers.com/locations/stockholm/#localbusiness",
     name: "Postbox24 Stockholm",
-    image: "https://postbox24.se/logo.webp",
-    url: "https://postbox24.se/locations/stockholm",
+    image: "https://postboxoffers.com/logo.webp",
+    url: "https://postboxoffers.com/locations/stockholm",
     telephone: "08-743 07 70",
     priceRange: "$$",
     address: {
@@ -47,14 +47,14 @@ export default function StockholmLocationPage() {
   };
 
   const breadcrumbItems = [
-    { label: "Locations", href: "/#locations" },
+    { label: "Kontor", href: "/#locations" },
     { label: "Stockholm", href: "/locations/stockholm" },
   ];
 
   const takeaways = [
-    "Our flagship Stockholm office is located in Östermalm, with supporting sub-locations in Södermalm, Farsta, and Skärholmen.",
-    "Ideal for corporate registration (säte) with Bolagsverket and tax registration with Skatteverket.",
-    "Physical drop-off and pickup options are available at our Kocksgatan service office.",
+    "Vårt huvudkontor i Stockholm ligger på Östermalm, med stödjande underkontor på Södermalm, i Farsta och Skärholmen.",
+    "Idealiskt för registrering av säte hos Bolagsverket och skatteregistrering hos Skatteverket.",
+    "Fysisk inlämning och upphämtning är möjlig på vårt servicekontor på Kocksgatan.",
   ];
 
   return (
@@ -67,21 +67,17 @@ export default function StockholmLocationPage() {
 
         {/* Page Title */}
         <h1 className="text-4xl md:text-5xl font-display font-normal text-[#0a1628] mb-6 tracking-tight leading-tight">
-          Business Address in{" "}
+          Företagsadress i{" "}
           <span className="italic text-[#05A7F4]">Stockholm</span>
         </h1>
 
         {/* AEO Trust Signals */}
-        <AeoTrustSignals takeaways={takeaways} lastUpdated="June 19, 2026" />
+        <AeoTrustSignals takeaways={takeaways} lastUpdated="June 20, 2026" />
 
         {/* Concise Answer Block (GEO/AEO optimized) */}
         <section className="prose max-w-none text-slate-600 space-y-6">
           <p className="text-lg text-slate-800 font-semibold leading-relaxed">
-            Postbox24's Stockholm business address service allows you to
-            register your company and manage correspondence from premium
-            commercial hubs including Östermalm, Södermalm, Farsta, and
-            Skärholmen. Operating since 1999, we provide full mail digitization
-            (same-day scanning) and secure physical mail pickup.
+            Postbox24:s tjänst for företagsadresser i Stockholm gör det möjligt att registrera ditt företag och hantera din post i attraktiva områden som Östermalm, Södermalm, Farsta och Skärholmen. Vi har varit verksamma sedan 1999 och erbjuder full digitalisering av post (skanning samma dag) samt säker fysisk upphämtning.
           </p>
 
           <hr className="border-[#E1EDF8] my-8" />
@@ -89,14 +85,10 @@ export default function StockholmLocationPage() {
           {/* District Highlights */}
           <article className="space-y-4">
             <h2 className="text-2xl font-bold text-[#0a1628]">
-              Why choose a Stockholm address for your company?
+              Varför välja en adress i Stockholm för ditt företag?
             </h2>
             <p className="leading-relaxed">
-              Stockholm is recognized globally as the financial capital of
-              Scandinavia and a major breeding ground for tech startups. An
-              address in Stockholm's downtown commercial districts instantly
-              elevates your company's prestige, reassuring local banks,
-              partners, and Swedish regulatory bodies of your presence.
+              Stockholm är internationellt känt som Skandinaviens finansiella huvudstad och ett stort nav för tech-startups. En adress i Stockholms centrala affärsdistrikt höjer omedelbart företagets status och ger ett seriöst intryck gentemot banker, partners och svenska myndigheter.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
               <div className="p-4 border border-[#E1EDF8] rounded-xl bg-[#F7FBFF]">
@@ -104,8 +96,7 @@ export default function StockholmLocationPage() {
                   Östermalm & Södermalm
                 </h4>
                 <p className="text-xs leading-relaxed">
-                  Flagship corporate presence. Ideal for tech startups, saas
-                  enterprises, financial consultancies, and creative boutiques.
+                  Representativ närvaro. Perfekt för tech-startups, SaaS-företag, finansiella konsulter och kreativa byråer.
                 </p>
               </div>
               <div className="p-4 border border-[#E1EDF8] rounded-xl bg-[#F7FBFF]">
@@ -113,8 +104,7 @@ export default function StockholmLocationPage() {
                   Farsta & Skärholmen
                 </h4>
                 <p className="text-xs leading-relaxed">
-                  Strategic suburban locations. Excellent for regional offices,
-                  logistics support points, and e-commerce companies.
+                  Strategiska förortslägen. Utmärkt för regionkontor, logistiska stödpunkter och e-handelsföretag.
                 </p>
               </div>
             </div>
@@ -123,11 +113,10 @@ export default function StockholmLocationPage() {
           {/* Services Available */}
           <article className="space-y-4 pt-6">
             <h2 className="text-2xl font-bold text-[#0a1628]">
-              Services Available in Stockholm
+              Tillgängliga tjänster i Stockholm
             </h2>
             <p className="leading-relaxed">
-              At our Stockholm offices, you can access our full suite of
-              professional services:
+              På våra Stockholmskontor har du tillgång till hela vårt utbud av professionella tjänster:
             </p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 list-none pl-0">
               <li className="flex items-center gap-2 p-2 border border-[#E1EDF8] rounded-lg">
@@ -136,7 +125,7 @@ export default function StockholmLocationPage() {
                   href="/services/virtual-mailbox"
                   className="font-semibold text-slate-800 hover:text-[#05A7F4]"
                 >
-                  Virtual Mailbox & Scanning
+                  Virtuell postbox & skanning
                 </Link>
               </li>
               <li className="flex items-center gap-2 p-2 border border-[#E1EDF8] rounded-lg">
@@ -145,7 +134,7 @@ export default function StockholmLocationPage() {
                   href="/services/business-address"
                   className="font-semibold text-slate-800 hover:text-[#05A7F4]"
                 >
-                  Official Business Address
+                  Officiell företagsadress
                 </Link>
               </li>
               <li className="flex items-center gap-2 p-2 border border-[#E1EDF8] rounded-lg">
@@ -154,7 +143,7 @@ export default function StockholmLocationPage() {
                   href="/services/mail-forwarding"
                   className="font-semibold text-slate-800 hover:text-[#05A7F4]"
                 >
-                  Mail Forwarding
+                  Eftersändning av post
                 </Link>
               </li>
               <li className="flex items-center gap-2 p-2 border border-[#E1EDF8] rounded-lg">
@@ -163,7 +152,7 @@ export default function StockholmLocationPage() {
                   href="/services/company-registration-address"
                   className="font-semibold text-slate-800 hover:text-[#05A7F4]"
                 >
-                  Registered Corporate Säte
+                  Registrerat säte för företag
                 </Link>
               </li>
             </ul>
@@ -172,24 +161,20 @@ export default function StockholmLocationPage() {
           {/* Local Information */}
           <article className="space-y-4 pt-6 border-t border-[#E1EDF8]">
             <h2 className="text-2xl font-bold text-[#0a1628]">
-              Service Office & Visiting Details
+              Servicekontor & besöksinformation
             </h2>
             <p className="leading-relaxed">
-              If you wish to visit our team, pick up original physical mail, or
-              drop off letters for 24/7 delivery, you can find us at our central
-              Södermalm office:
+              Om du vill besöka oss, hämta dina fysiska originalbrev eller lämna in brev för leverans dygnet runt, hittar du oss på vårt centrala kontor på Södermalm:
             </p>
             <div className="p-5 bg-slate-50 border border-[#E1EDF8] rounded-2xl text-sm space-y-2.5">
               <div>
-                <strong>Street Address:</strong> Kocksgatan 49, 116 24
-                Stockholm, Sweden
+                <strong>Gatuadress:</strong> Kocksgatan 49, 116 24 Stockholm, Sverige
               </div>
               <div>
-                <strong>Customer Support Phone:</strong> 08-743 07 70
+                <strong>Kundsupport (tfn):</strong> 08-743 07 70
               </div>
               <div>
-                <strong>Attending Hours:</strong> Monday – Friday 12:00–17:00
-                (drop-off slot open 24/7)
+                <strong>Besökstider:</strong> Måndag – fredag 12:00–17:00 (inkastet öppet dygnet runt)
               </div>
             </div>
           </article>

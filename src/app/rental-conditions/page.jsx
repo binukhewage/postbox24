@@ -7,11 +7,11 @@ import AeoTrustSignals from "../components/AeoTrustSignals";
 import JsonLd from "../components/JsonLd";
 
 export const metadata = {
-  title: "Rental Conditions & Terms of Service | Postbox24",
+  title: "Hyresvillkor & Avtalsvillkor | Postbox24",
   description:
-    "Official terms and conditions governing the postbox rentals at Postbox24. Learn about rental periods, cancellations, deposits, and conditions.",
+    "Allmänna hyresvillkor och avtalsregler för hyra av postbox hos Postbox24 AB. Läs om hyresperioder, uppsägning, depositioner och villkor.",
   alternates: {
-    canonical: "https://postbox24.se/rental-conditions",
+    canonical: "https://postboxoffers.com/rental-conditions",
   },
 };
 
@@ -19,10 +19,10 @@ export default function RentalConditionsPage() {
   const termsSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://postbox24.se/rental-conditions/#webpage",
-    name: "Postbox24 Rental Conditions",
+    "@id": "https://postboxoffers.com/rental-conditions/#webpage",
+    name: "Postbox24 Hyresvillkor",
     description:
-      "General terms of service and mailbox lease clauses for Postbox24 AB.",
+      "Allmänna avtalsvillkor och hyresklausuler för postboxar hos Postbox24 AB.",
     publisher: {
       "@type": "Organization",
       name: "Postbox24",
@@ -30,95 +30,95 @@ export default function RentalConditionsPage() {
   };
 
   const breadcrumbItems = [
-    { label: "Rental Conditions", href: "/rental-conditions" },
+    { label: "Hyresvillkor", href: "/rental-conditions" },
   ];
 
   const takeaways = [
-    "Rental periods automatically renew for the paid duration (6 or 12 months).",
-    "Cancellation requires a written notice 2 months prior to the end date.",
-    "Deposit of SEK 250 is refunded after successful termination and key return.",
-    "Mailboxes CANNOT be used as a folkbokföring (civil registration) address.",
-    "Subletting is strictly prohibited and leads to immediate termination.",
+    "Hyresperioden förlängs automatiskt med samma varaktighet (6 eller 12 månader) om den inte sägs upp.",
+    "Uppsägning måste ske skriftligen senast 2 månader före avtalstidens utgång.",
+    "Depositionen på 250 kr återbetalas efter avslutad hyra och återlämnad nyckel.",
+    "Postboxar får INTE användas för folkbokföring (folkbokföringsadress).",
+    "Andrahandsuthyrning är strängt förbjuden och leder till omedelbar uppsägning.",
   ];
 
   const conditions = [
     {
       id: "section-1",
-      title: "§ 1. Rental Period, Renewal & Right of Withdrawal",
+      title: "§ 1. Hyresperiod, förlängning & ångerrätt",
       content:
-        "The rental period of six or twelve months starts when payment has been received. The lease is automatically extended by six or twelve months in accordance with the last paid period. The notice period is two months and notice must be given in writing via e-mail or by letter. The rental fee is non-refundable after signing the rental agreement. Digitally signed leases are subject to a fourteen-day right of withdrawal for a fee of SEK 250. Digital returns are only refunded via electronic transfer to the lessee.",
+        "Hyresperioden på sex eller tolv månader börjar gälla när betalningen har mottagits. Hyresavtalet förlängs automatiskt med sex eller tolv månader i enlighet med den senast betalda perioden. Uppsägningstiden är två månader och uppsägning måste ske skriftligen via e-post eller brev. Hyresavgiften återbetalas inte efter att hyresavtalet har tecknats. Digitalt signerade hyresavtal omfattas av fjorton dagars ångerrätt mot en avgift på 250 kr. Depositioner återbetalas endast via elektronisk överföring till hyresgästen.",
     },
     {
       id: "section-2",
-      title: "§ 2. Delivery & Address Change Responsibility",
+      title: "§ 2. Ansvar för postleverans & adressändring",
       content:
-        "Postbox24 is not responsible for mail misordered by Posten, Postnord and City Mail or lost for other reasons, nor for changes regarding the address. The lessee is responsible for changes of address himself. By signing the rental agreement, the customer agrees that Postbox24 may throw away any remaining mail at the end of the rental agreement as well as future mail that comes incorrectly because the customer has not changed his address.",
+        "Postbox24 ansvarar inte för post som felsorterats av Posten, PostNord och CityMail eller förlorats av andra skäl, ej heller för ändringar gällande adressen. Hyresgästen ansvarar själv för adressändring. Genom att signera hyresavtalet godkänner kunden att Postbox24 får kasta eventuell kvarvarande post vid hyresavtalets utgång samt framtida post som kommer felaktigt på grund av att kunden inte har ändrat sin adress.",
     },
     {
       id: "section-3",
-      title: "§ 3. Proper Use & Criminal Activities Prohibitions",
+      title: "§ 3. Korrekt användning & förbud mot kriminell verksamhet",
       content:
-        "The post office box may only be used for storing mail. Postbox24 has no responsibility for the contents of the post office box. The lessee has no right to use the post office box for other purposes. Violation of this results in immediate termination of the lease. Suspicion of possible criminal activity, money laundering or terrorist financing results in immediate termination of the lease, and will be reported to the police and reported to the financial police. The rental fee is non-refundable.",
+        "Postboxen får endast användas för lagring av post. Postbox24 och dess franchisetagare har inget ansvar för postboxens innehåll. Hyresgästen har inte rätt att använda postboxen för andra ändamål. Överträdelse av detta resulterar i omedelbar uppsägning av avtalet. Misstanke om kriminell verksamhet, penningtvätt eller finansiering av terrorism leder till omedelbar uppsägning av avtalet, och kommer att polisanmälas samt rapporteras till Finanspolisen. Erlagd hyresavgift återbetalas ej.",
     },
     {
       id: "section-4",
-      title: "§ 4. Security Deposit Refund Conditions",
+      title: "§ 4. Villkor för återbetalning av deposition",
       content:
-        "The price includes a deposit of SEK 250. The deposit is only refunded when the post office box is terminated in writing via e-mail or by letter two months before the end of the rental agreement, a change of address has taken place and any key returned. The deposit is only refunded via electronic transfer to the lessee.",
+        "I priset ingår en deposition på 250 kr. Depositionen återbetalas endast när postboxen sägs upp skriftligen via e-post eller brev två månader innan avtalstidens utgång, en adressändring har registrerats bort från postboxen, samt eventuell nyckel har returnerats. Depositionen återbetalas endast via elektronisk överföring till hyresgästen.",
     },
     {
       id: "section-5",
-      title: "§ 5. Service Termination Guidelines",
+      title: "§ 5. Riktlinjer för uppsägning av tjänst",
       content:
-        "For termination of service, this must be done in writing via e-mail or by letter no later than two months before the end of the rental period, otherwise the rental period is automatically extended by six months or twelve months in accordance with the last paid period. In the event of termination, the deposit is only refunded when the post office box is canceled in writing via e-mail or by letter two months before the end of the rental agreement, a change of address must have taken place and any key must be returned. The deposit is only refunded via electronic transfer to the lessee. By signing the rental agreement, the customer agrees that Postbox24 may throw away any remaining mail at the end of the rental agreement as well as future mail that comes incorrectly because the customer has not changed his address.",
+        "Uppsägning av tjänsten måste ske skriftligen via e-post eller brev senast två månader före hyresperiodens slut, annars förlängs hyresperioden automatiskt med sex eller tolv månader i enlighet med den senast betalda perioden. Vid uppsägning återbetalas depositionen endast om postboxen sägs upp skriftligen via e-post eller brev två månader före avtalets utgång, en adressändring har gjorts och eventuell nyckel returnerats. Genom att signera hyresavtalet godkänner kunden att Postbox24 får slänga kvarvarande post vid avtalets slut samt framtida post som kommer felaktigt på grund av utebliven adressändring.",
     },
     {
       id: "section-6",
-      title: "§ 6. Invoices, Payments & Payment Channels",
+      title: "§ 6. Fakturor, betalningar & betalkanaler",
       content:
-        "One to two months before the end of the rental period, we send an invoice/reminder regarding the next period. The next period must be paid one month before the end of the current rental period. We currently offer the following payment options: SWISH (1230541359), card payment at the office or via our website, and payment to our Bankgiro: 5521-6121.",
+        "En till två månader innan hyresperiodens slut skickar vi en faktura/påminnelse gällande nästa period. Nästa period ska vara betald en månad före den aktuella hyresperiodens utgång. Vi erbjuder för närvarande följande betalningsalternativ: SWISH (1230541359), kortbetalning på kontoret eller via vår hemsida, samt betalning till vårt Bankgiro: 5521-6121.",
     },
     {
       id: "section-7",
-      title: "§ 7. Liabilities & Property Insurance Exclusions",
+      title: "§ 7. Ansvar & undantag för egendomsförsäkring",
       content:
-        "Postbox24 is not responsible for customers' property in their respective mailboxes in the event of burglary, fire or water damage to Postbox24's premises or their franchisee's premises.",
+        "Postbox24 ansvarar inte för kundernas egendom i deras respektive postboxar i händelse av inbrott, brand eller vattenskada i Postbox24:s lokaler eller deras franchisetagares lokaler.",
     },
     {
       id: "section-8",
-      title: "§ 8. Civil Registration Act Compliance & Fines",
+      title: "§ 8. Efterlevnad av folkbokföringslagen & böter",
       content:
-        "Customers who, according to the Civil Registration Act (1991:481), want to register at an address may themselves be responsible for their own use, amendment and rejection of an application, i.e. § 37. A fine can be imposed by the Swedish Tax Agency (Skatteverket) on anyone who does not comply with an order according to § 31 or 32. The rental fee is non-refundable.",
+        "Kunder som vill folkbokföra sig på en adress ansvarar själva för sin ansökan, ändring eller avslag på en ansökan enligt folkbokföringslagen (1991:481). Böter kan påföras av Skatteverket för den som inte följer ett föreläggande. Hyresavgiften återbetalas ej.",
     },
     {
       id: "section-9",
-      title: "§ 9. c/o Mail Forwarding & Subletting Prohibition",
+      title: "§ 9. c/o-post & förbud mot andrahandsuthyrning",
       content:
-        "Mail addressed c/o a lessee will be returned to the sender. Any form of subletting of the post office box leads to an immediate termination of the rental agreement. The rental fee is non-refundable.",
+        "Post adresserad c/o till en hyresgäst kommer att returneras till avsändaren. All form av andrahandsuthyrning av postboxen leder till omedelbar uppsägning av hyresavtalet. Hyresavgiften återbetalas ej.",
     },
     {
       id: "section-10",
-      title: "§ 10. Civil Registration (Folkbokföring) Forbidden",
+      title: "§ 10. Folkbokföring förbjuden",
       content:
-        "Under no circumstances is it permitted to use Postbox24's mailboxes as a civil registration address (folkbokföringsadress). However, we recommend registering the post office box as a special postal address (särskild postadress). Postbox24 reserves the right to immediately terminate a rental contract in cases where the customer has provided incorrect personal data. The rental fee is non-refundable.",
+        "Under inga omständigheter är det tillåtet att använda Postbox24:s postboxar som folkbokföringsadress. Vi rekommenderar dock att du registrerar postboxen som en särskild postadress hos Skatteverket. Postbox24 förbehåller sig rätten att omedelbart säga upp ett hyresavtal i de fall kunden har lämnat felaktiga personuppgifter. Hyresavgiften återbetalas ej.",
     },
     {
       id: "section-11",
-      title: "§ 11. Digital Mailbox & Forwarding Service Agreements",
+      title: "§ 11. Digital postbox & avtal om eftersändningstjänst",
       content:
-        "Digital mailbox – In cases where the customer wishes, Postbox24 forwards incoming mail to the customer via e-mail or regular mail. For this service, the Customer replaces Postbox24 according to the current price list. The customer confirms by ordering the service that Postbox24 or the person they appoint has the right to open mail for forwarding to the customer via e-mail or regular mail. Mail that is only forwarded via e-mail is saved for 30 days. Any bids that pick up mail on behalf of the customer must be notified in advance to the office and be able to present valid identification.",
+        "Digital postbox – I de fall kunden önskar eftersänder Postbox24 inkommande post till kunden via e-post eller vanlig post. För denna tjänst ersätter kunden Postbox24 enligt gällande prislista. Kunden bekräftar genom att beställa tjänsten att Postbox24 eller den de utser har rätt att öppna post för eftersändning till kunden via e-post eller vanlig post. Post som endast eftersänds via e-post sparas i 30 dagar. Bud som hämtar post för kundens räkning måste anmälas i förväg till kontoret och kunna uppvisa giltig legitimation.",
     },
     {
       id: "section-12",
-      title: "§ 12. Policy on Threatening Behavior & Safety",
+      title: "§ 12. Policy kring hotfullt beteende & säkerhet",
       content:
-        "Postbox24 reserves the right to immediately terminate a rental contract without further explanation in cases where the lessee behaves threateningly or otherwise creates discomfort for employees and other personnel. All threats are reported to the police. The rental fee is non-refundable.",
+        "Postbox24 förbehåller sig rätten att omedelbart säga upp ett hyresavtal utan ytterligare förklaring i de fall hyresgästen uppträder hotfullt eller på annat sätt skapar obehag för anställda och övrig personal. Alla hot polisanmäls. Hyresavgiften återbetalas ej.",
     },
     {
       id: "section-13",
-      title: "§ 13. Acceptance of Terms",
+      title: "§ 13. Godkännande av villkor",
       content:
-        "The customer accepts these terms by signing the rental agreement with their signature or digital signature.",
+        "Kunden godkänner dessa villkor genom att signera hyresavtalet med sin namnteckning eller digitala signatur.",
     },
   ];
 
@@ -132,11 +132,11 @@ export default function RentalConditionsPage() {
 
         {/* Page Title */}
         <h1 className="text-4xl md:text-5xl font-display font-normal text-[#0a1628] mb-6 tracking-tight leading-tight">
-          Rental <span className="italic text-[#05A7F4]">Conditions</span>
+          Hyres<span className="italic text-[#05A7F4]">villkor</span>
         </h1>
 
         {/* AEO Trust Signals */}
-        <AeoTrustSignals takeaways={takeaways} lastUpdated="June 20, 2026" />
+        <AeoTrustSignals takeaways={takeaways} lastUpdated="20 juni 2026" />
 
         {/* Introduction */}
         <div className="prose max-w-none text-slate-600 space-y-8">

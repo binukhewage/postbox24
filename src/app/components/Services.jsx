@@ -15,22 +15,22 @@ import {
 export default function Services() {
   const audience = [
     {
-      title: "Business Owners",
-      desc: "Ideal for startups, consultants, sole proprietors, freelancers, e-commerce and growing businesses looking for a professional business address.",
+      title: "Företagare",
+      desc: "Idealiskt för startups, konsulter, enskilda firmor, frilansare, e-handel och växande företag som söker en professionell företagsadress.",
       icon: Briefcase,
       image: "/business_owner.png",
       link: "/services/business-address",
     },
     {
-      title: "Private Individuals",
-      desc: "Keep your home address private and enjoy a stable mailing address, even if you move frequently.",
+      title: "Privatpersoner",
+      desc: "Håll din hemadress privat och få en stabil postadress, även om du flyttar ofta.",
       icon: Home,
       image: "/private_individual.png",
       link: "/services/virtual-mailbox",
     },
     {
-      title: "International Companies",
-      desc: "Establish a trusted Swedish business presence with a local mailing address and reliable mail handling.",
+      title: "Utländska företag",
+      desc: "Etablera en trovärdig svensk affärsnärvaro med en lokal postadress och tillförlitlig posthantering.",
       icon: Globe,
       image: "/international_companies.png",
       link: "/services/company-registration-address",
@@ -39,32 +39,32 @@ export default function Services() {
 
   const offers = [
     {
-      title: "Business Address",
+      title: "Företagsadress",
       icon: Briefcase,
       link: "/services/business-address",
     },
     {
-      title: "Virtual Address",
+      title: "Virtuell postbox",
       icon: MapPin,
       link: "/services/virtual-mailbox",
     },
     {
-      title: "Legal Mailing Address",
+      title: "Särskild postadress",
       icon: Mail,
       link: "/services/company-registration-address",
     },
     {
-      title: "Business Mail Handling",
+      title: "Posthantering för företag",
       icon: Inbox,
       link: "/services/mail-forwarding",
     },
     {
-      title: "Address for Sole Proprietorships",
+      title: "Adress för enskild firma",
       icon: User,
       link: "/services/company-registration-address",
     },
     {
-      title: "Digital Mail Management",
+      title: "Digital posthantering",
       icon: FileText,
       link: "/services/mail-forwarding",
     },
@@ -79,15 +79,14 @@ export default function Services() {
         {/* Top Header Section */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="inline-block text-[#05A7F4] text-xs font-bold tracking-[0.2em] uppercase mb-4">
-            WHO IS IT FOR?
+            Vem är det till för?
           </span>
           <h2 className="text-4xl md:text-5xl font-display font-normal text-[#0a1628] mb-5 tracking-tight leading-tight">
-            A Perfect Mailing Solution for{" "}
-            <span className="italic text-[#05A7F4]">Everyone</span>
+            En perfekt postlösning för{" "}
+            <span className="italic text-[#05A7F4]">alla</span>
           </h2>
           <p className="text-slate-500 text-sm md:text-base leading-relaxed">
-            Whether you are building a business, protecting your privacy or
-            expanding internationally, Postbox24 has you covered.
+            Oavsett om du bygger ett företag, vill skydda din privata adress eller expanderar internationellt, har Postbox24 lösningen för dig.
           </p>
         </div>
 
@@ -128,7 +127,7 @@ export default function Services() {
                     href={item.link}
                     className="inline-flex items-center gap-1.5 text-sm font-bold text-[#05A7F4] hover:text-[#0393d6] transition-colors group/link"
                   >
-                    Learn more
+                    Läs mer
                     <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-0.5" />
                   </Link>
                 </div>
@@ -143,21 +142,20 @@ export default function Services() {
             {/* Left Info Column */}
             <div className="lg:col-span-5 flex flex-col items-start text-left">
               <span className="text-[#05A7F4] text-xs font-bold tracking-[0.2em] uppercase mb-3">
-                WHAT WE OFFER
+                Vad vi erbjuder
               </span>
               <h3 className="text-3xl lg:text-4xl font-display font-normal text-[#0a1628] mb-4 leading-tight">
-                Professional Services <br /> That Work for{" "}
-                <span className="italic text-[#05A7F4]">You</span>
+                Professionella tjänster <br /> anpassade för{" "}
+                <span className="italic text-[#05A7F4]">dig</span>
               </h3>
               <p className="text-slate-500 text-sm leading-relaxed mb-8">
-                Convenient and secure solutions to receive, manage and access
-                your mail without the need for a physical office.
+                Smidiga och säkra lösningar för att ta emot, hantera och läsa din post utan behov av ett fysiskt kontor.
               </p>
               <Link
                 href="/#pricing"
                 className="inline-flex items-center gap-2 bg-[#05A7F4] hover:bg-[#0393d6] text-white text-sm font-bold py-3 px-6 rounded-xl transition-all duration-300 shadow-[0_4px_12px_rgba(5,167,244,0.3)] hover:shadow-[0_6px_16px_rgba(5,167,244,0.4)] hover:-translate-y-0.5 active:translate-y-0"
               >
-                View Our Offers
+                Se våra erbjudanden
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>

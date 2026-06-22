@@ -45,9 +45,9 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-1">
             {[
-              { href: "/#services", label: "Services" },
-              { href: "/#faq", label: "FAQ" },
-              { href: "/#pricing", label: "Offers" },
+              { href: "/#services", label: "Tjänster" },
+              { href: "/#faq", label: "Vanliga frågor" },
+              { href: "/#pricing", label: "Erbjudanden" },
             ].map(({ href, label }) => (
               <Link
                 key={href}
@@ -65,7 +65,7 @@ export default function Navbar() {
               href="https://postbox24.se/collections/valj-din-postbox"
               className="group relative inline-flex items-center gap-1.5 bg-[#0a1628] text-white text-sm font-semibold py-2.5 px-5 rounded-xl transition-all duration-300 hover:bg-[#1E293B] hover:shadow-[0_4px_16px_rgba(10,22,40,0.25)] active:scale-[0.97]"
             >
-              Book Now
+              Beställ nu
               <FiArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5" />
             </Link>
           </div>
@@ -97,9 +97,9 @@ export default function Navbar() {
         >
           <div className="flex flex-col gap-1 pb-2">
             {[
-              { href: "/#services", label: "Services" },
-              { href: "/#faq", label: "FAQ" },
-              { href: "/#pricing", label: "Offers" },
+              { href: "/#services", label: "Tjänster" },
+              { href: "/#faq", label: "Vanliga frågor" },
+              { href: "/#pricing", label: "Erbjudanden" },
             ].map(({ href, label }) => (
               <Link
                 key={href}
@@ -111,11 +111,11 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
-              href="/#pricing"
+              href="https://postbox24.se/collections/valj-din-postbox"
               onClick={() => setIsOpen(false)}
               className="bg-[#0a1628] text-white text-center font-semibold py-3 rounded-xl transition-all duration-200 hover:bg-[#1E293B] mt-2 text-sm"
             >
-              Book Now
+              Beställ nu
             </Link>
           </div>
         </div>

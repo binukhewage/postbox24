@@ -19,16 +19,15 @@ export default function Features() {
         <div className="max-w-2xl mb-16 flex flex-col items-start">
           {/* Top Kicker Badge (Matched with Hero) */}
           <span className="inline-block text-[#05A7F4] text-xs font-bold tracking-[0.2em] uppercase mb-4">
-            WHY US
+            Varför välja oss
           </span>
 
           <h2 className="animate-fadeSlideUp [animation-delay:80ms] text-[clamp(2rem,4vw,3.5rem)] font-display font-normal text-[#0a1628] tracking-tight leading-[1.08] mb-6">
-            Why Choose{" "}
-            <span className="italic text-[#05A7F4]">PostBox 24 ?</span>
+            Varför välja{" "}
+            <span className="italic text-[#05A7F4]">Postbox24?</span>
           </h2>
           <p className="animate-fadeSlideUp [animation-delay:160ms] text-[1.02rem] text-slate-500 leading-relaxed max-w-xl">
-            We provide the infrastructure for your success, blending 25+ years
-            of heritage with modern digital efficiency.
+            Vi bygger infrastrukturen för din framgång och förenar över 25 års erfarenhet med modern digital effektivitet.
           </p>
         </div>
 
@@ -38,26 +37,26 @@ export default function Features() {
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
             {[
               {
-                title: "Business Address",
-                desc: "Establish legitimacy with a prestigious physical office location in Stockholm or Gothenburg.",
+                title: "Företagsadress",
+                desc: "Stärk företagets legitimitet med en representativ fysisk kontorsadress i Stockholm eller Göteborg.",
                 icon: <FiBriefcase className="w-5 h-5" />,
                 delay: "240ms",
               },
               {
-                title: "Secure Handling",
-                desc: "Confidential mail sorting, digital scanning, and secure forwarding of all your physical letters.",
+                title: "Säker hantering",
+                desc: "Konfidentiell postsortering, digital skanning och säker eftersändning av alla dina fysiska brev.",
                 icon: <FiShield className="w-5 h-5" />,
                 delay: "320ms",
               },
               {
-                title: "Flexible Mailboxes",
-                desc: "Access your mail 24/7 or receive same-day notifications and PDF copies.",
+                title: "Flexibla postboxar",
+                desc: "Få tillgång till din post dygnet runt eller ta emot aviseringar och PDF-kopior samma dag.",
                 icon: <FiInbox className="w-5 h-5" />,
                 delay: "400ms",
               },
               {
-                title: "Trusted Since 1999",
-                desc: "Operating continuously in Sweden with thousands of satisfied local and international clients.",
+                title: "Tryggt sedan 1999",
+                desc: "Verksamma i Sverige sedan 1999 med tusentals nöjda svenska och internationella kunder.",
                 icon: <FiAward className="w-5 h-5" />,
                 delay: "480ms",
               },
@@ -86,7 +85,7 @@ export default function Features() {
               <div className="relative w-full h-full rounded-2xl overflow-hidden bg-[#F7FBFF]">
                 <Image
                   src="/4.png"
-                  alt="Sleek metallic business postbox set"
+                  alt="Stilrena postboxar i metall för företag"
                   fill
                   sizes="(max-width: 1024px) 100vw, 450px"
                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
@@ -102,10 +101,10 @@ export default function Features() {
                   </div>
                   <div>
                     <h4 className="text-xs font-bold text-[#0a1628] mb-0.5">
-                      Years of Experience
+                      Års erfarenhet
                     </h4>
                     <p className="text-[10px] text-slate-500 leading-relaxed font-medium">
-                      Trusted by over 10,000 businesses globally.
+                      Betrott av över 10 000 företag världen över.
                     </p>
                   </div>
                 </div>

@@ -2,15 +2,15 @@ import "./globals.css";
 import JsonLd from "./components/JsonLd";
 
 export const metadata = {
-  metadataBase: new URL("https://postbox24.se"),
+  metadataBase: new URL("https://postboxoffers.com"),
   title: {
-    default: "Postbox24 | Premium Virtual Mailbox & Business Address in Sweden",
+    default: "Postbox24 | Virtuell postbox & företagsadress i Sverige",
     template: "%s | Postbox24",
   },
   description:
-    "Get a prestigious business address, virtual mailbox, and secure mail forwarding in Stockholm or Gothenburg. Same-day activation, secure digital scanning.",
+    "Få en representativ företagsadress, virtuell postbox och säker eftersändning i Stockholm eller Göteborg. Aktivering samma dag och säker digital skanning.",
   alternates: {
-    canonical: "https://postbox24.se/",
+    canonical: "https://postboxoffers.com/",
   },
   robots: {
     index: true,
@@ -24,52 +24,52 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Postbox24 | Premium Virtual Mailbox & Business Address in Sweden",
+    title: "Postbox24 | Virtuell postbox & företagsadress i Sverige",
     description:
-      "Get a prestigious business address, virtual mailbox, and secure mail forwarding in Stockholm or Gothenburg. Same-day activation, secure digital scanning.",
-    url: "https://postbox24.se",
+      "Få en representativ företagsadress, virtuell postbox och säker eftersändning i Stockholm eller Göteborg. Aktivering samma dag och säker digital skanning.",
+    url: "https://postboxoffers.com",
     siteName: "Postbox24",
-    locale: "en_US",
+    locale: "sv_SE",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Postbox24 | Premium Virtual Mailbox & Business Address in Sweden",
+    title: "Postbox24 | Virtuell postbox & företagsadress i Sverige",
     description:
-      "Get a prestigious business address, virtual mailbox, and secure mail forwarding in Stockholm or Gothenburg.",
+      "Få en representativ företagsadress, virtuell postbox och säker eftersändning i Stockholm eller Göteborg.",
   },
 };
 
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://postbox24.se/#organization",
+  "@id": "https://postboxoffers.com/#organization",
   name: "Postbox24",
-  url: "https://postbox24.se",
-  logo: "https://postbox24.se/logo.webp",
+  url: "https://postboxoffers.com",
+  logo: "https://postboxoffers.com/logo.webp",
   contactPoint: {
     "@type": "ContactPoint",
     telephone: "+46-8-743-07-70",
-    contactType: "customer service",
-    availableLanguage: ["English", "Swedish"],
+    contactType: "kundtjänst",
+    availableLanguage: ["Swedish", "English"],
   },
 };
 
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://postbox24.se/#website",
+  "@id": "https://postboxoffers.com/#website",
   name: "Postbox24",
-  url: "https://postbox24.se",
+  url: "https://postboxoffers.com",
 };
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://postbox24.se/#localbusiness",
+  "@id": "https://postboxoffers.com/#localbusiness",
   name: "Postbox24",
-  image: "https://postbox24.se/logo.webp",
-  url: "https://postbox24.se",
+  image: "https://postboxoffers.com/logo.webp",
+  url: "https://postboxoffers.com",
   telephone: "08-743 07 70",
   address: {
     "@type": "PostalAddress",
@@ -93,7 +93,7 @@ const localBusinessSchema = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="h-full antialiased">
+    <html lang="sv" className="h-full antialiased">
       <body className="min-h-full flex flex-col bg-white text-[#0a1628]">
         <JsonLd schema={organizationSchema} />
         <JsonLd schema={websiteSchema} />

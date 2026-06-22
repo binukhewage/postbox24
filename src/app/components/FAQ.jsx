@@ -6,24 +6,24 @@ import JsonLd from "./JsonLd";
 export default function FAQ() {
   const faqs = [
     {
-      q: "Can I use the address for my business?",
-      a: "Yes. Our addresses can be used as your official business mailing address.",
+      q: "Kan jag använda adressen för mitt företag?",
+      a: "Ja. Våra adresser kan användas som ditt företags officiella postadress.",
     },
     {
-      q: "Can private individuals rent a postbox?",
-      a: "Absolutely. Both businesses and private individuals are welcome.",
+      q: "Kan privatpersoner hyra en postbox?",
+      a: "Självklart. Både företag och privatpersoner är välkomna.",
     },
     {
-      q: "How quickly can I get started?",
-      a: "Most postboxes can be activated shortly after your registration is completed.",
+      q: "Hur snabbt kan jag komma igång?",
+      a: "De flesta postboxar kan aktiveras kort efter att din registrering har slutförts.",
     },
     {
-      q: "Can you scan my mail while I'm abroad?",
-      a: "Yes. We offer mail scanning services for customers who are traveling or living outside Sweden.",
+      q: "Kan ni skanna min post när jag är utomlands?",
+      a: "Ja. Vi erbjuder postskanning för kunder som reser mycket eller bor utanför Sverige.",
     },
     {
-      q: "How long has Postbox24 been operating?",
-      a: "Postbox24 has proudly provided professional postbox and mail handling services since 1999.",
+      q: "Hur länge har Postbox24 varit verksamt?",
+      a: "Postbox24 har stolt tillhandahållit professionella postboxar och posthantering sedan 1999.",
     },
   ];
 
@@ -51,11 +51,11 @@ export default function FAQ() {
           {/* Left Column: FAQ Accordion */}
           <div className="lg:col-span-7">
             <span className="inline-block text-[#05A7F4] text-xs font-semibold tracking-[0.15em] uppercase mb-4">
-              FAQ
+              Vanliga frågor
             </span>
             <h2 className="text-4xl font-display font-normal text-[#0a1628] mb-10 tracking-tight leading-tight">
-              Frequently Asked{" "}
-              <span className="italic text-[#05A7F4]">Questions</span>
+              Vanliga{" "}
+              <span className="italic text-[#05A7F4]">frågor</span>
             </h2>
             <div className="space-y-3">
               {faqs.map((faq, idx) => (
@@ -88,15 +88,13 @@ export default function FAQ() {
 
               <div className="relative z-10">
                 <span className="inline-block text-[#05A7F4] text-[10px] font-bold tracking-[0.15em] uppercase mb-3">
-                  Since 1999
+                  Sedan 1999
                 </span>
                 <h3 className="text-2xl font-bold text-white mb-4 leading-tight">
-                  About Postbox24
+                  Om Postbox24
                 </h3>
                 <p className="text-slate-400 text-sm leading-relaxed mb-6 font-medium">
-                  We've provided secure, flexible, and professional mail
-                  handling across Sweden for over two decades, helping
-                  entrepreneurs and companies scale remotely with confidence.
+                  Vi har erbjudit säker, flexibel och professionell posthantering i Sverige i över två decennier, vilket hjälper entreprenörer och företag att växa på distans med trygghet.
                 </p>
 
                 {/* Engaging bullet details */}
@@ -107,11 +105,10 @@ export default function FAQ() {
                     </div>
                     <div>
                       <h4 className="text-xs font-bold text-white mb-0.5">
-                        Bolagsverket Compliant
+                        Godkänt av Bolagsverket
                       </h4>
                       <p className="text-[11px] text-slate-400 leading-relaxed font-medium">
-                        Real commercial street addresses in Stockholm &
-                        Gothenburg (never residential PO Boxes).
+                        Verkliga kommersiella gatuadresser i Stockholm & Göteborg (inga c/o-adresser i bostadsområden).
                       </p>
                     </div>
                   </div>
@@ -122,11 +119,10 @@ export default function FAQ() {
                     </div>
                     <div>
                       <h4 className="text-xs font-bold text-white mb-0.5">
-                        Same-Day Digitizing
+                        Skanning samma dag
                       </h4>
                       <p className="text-[11px] text-slate-400 leading-relaxed font-medium">
-                        Letters opened, scanned in high resolution, and sent as
-                        secure PDFs within hours.
+                        Breven öppnas, skannas i hög upplösning och skickas som säkra PDF-filer inom några timmar.
                       </p>
                     </div>
                   </div>
@@ -137,11 +133,10 @@ export default function FAQ() {
                     </div>
                     <div>
                       <h4 className="text-xs font-bold text-white mb-0.5">
-                        BankID Security
+                        BankID-säkerhet
                       </h4>
                       <p className="text-[11px] text-slate-400 leading-relaxed font-medium">
-                        Identity verification and mail handling conform strictly
-                        to GDPR & Swedish privacy laws.
+                        Identitetsverifiering och posthantering följer strikt GDPR och svensk lagstiftning.
                       </p>
                     </div>
                   </div>
@@ -150,9 +145,9 @@ export default function FAQ() {
                 {/* Stats Row */}
                 <div className="grid grid-cols-3 gap-4 pt-6 border-t border-white/8">
                   {[
-                    { val: "25+", label: "Years" },
-                    { val: "10k+", label: "Clients" },
-                    { val: "99.9%", label: "Accuracy" },
+                    { val: "25+", label: "År" },
+                    { val: "10k+", label: "Kunder" },
+                    { val: "99.9%", label: "Precision" },
                   ].map(({ val, label }) => (
                     <div key={label} className="text-center md:text-left">
                       <div className="text-[#05A7F4] font-black text-2xl mb-1 leading-none">

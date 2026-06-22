@@ -7,11 +7,11 @@ import AeoTrustSignals from "../../components/AeoTrustSignals";
 import JsonLd from "../../components/JsonLd";
 
 export const metadata = {
-  title: "Company Registration Address Sweden | Bolagsverket Compliant",
+  title: "Registrerad företagsadress & Säte i Sverige | Postbox24",
   description:
-    "Get a legally compliant Swedish company registration address in Stockholm or Gothenburg. Suitable for Aktiebolag and sole proprietorships.",
+    "Få en juridiskt godkänd registrerad företagsadress och säte i Stockholm eller Göteborg. Lämplig för Aktiebolag och enskild firma.",
   alternates: {
-    canonical: "https://postbox24.se/services/company-registration-address",
+    canonical: "https://postboxoffers.com/services/company-registration-address",
   },
 };
 
@@ -20,15 +20,15 @@ export default function CompanyRegistrationAddressPage() {
     "@context": "https://schema.org",
     "@type": "Service",
     "@id":
-      "https://postbox24.se/services/company-registration-address/#service",
-    name: "Company Registration Address Service",
+      "https://postboxoffers.com/services/company-registration-address/#service",
+    name: "Registrerad företagsadress & Säte",
     provider: {
       "@type": "LocalBusiness",
-      "@id": "https://postbox24.se/#localbusiness",
+      "@id": "https://postboxoffers.com/#localbusiness",
     },
     areaServed: "SE",
     description:
-      "Legally compliant registered office addresses for corporate registration with Bolagsverket in Sweden.",
+      "Juridiskt godkända företagsadresser för registrering av säte hos Bolagsverket i Sverige.",
     offers: {
       "@type": "Offer",
       priceCurrency: "SEK",
@@ -48,35 +48,35 @@ export default function CompanyRegistrationAddressPage() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "Can I register a company using this address?",
+        name: "Kan jag registrera ett företag på den här adressen?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes, our addresses are located in commercial buildings, making them fully compliant with Bolagsverket (Swedish Companies Registration Office) regulations for registering a limited company (Aktiebolag).",
+          text: "Ja, våra adresser ligger i kommersiella fastigheter, vilket gör dem helt godkända enligt Bolagsverkets regler för att registrera ett aktiebolag (AB).",
         },
       },
       {
         "@type": "Question",
-        name: "Does Skatteverket accept virtual company addresses?",
+        name: "Godkänner Skatteverket virtuella företagsadresser?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes, provided the address is a physical street location capable of receiving corporate mail. Our central office addresses satisfy all Skatteverket tax registration criteria.",
+          text: "Ja, förutsatt att adressen är en fysisk gatuadress som kan ta emot företagspost. Våra centrala kontorsadresser uppfyller alla Skatteverkets krav för skatteregistrering.",
         },
       },
     ],
   };
 
   const breadcrumbItems = [
-    { label: "Services", href: "/#services" },
+    { label: "Tjänster", href: "/#services" },
     {
-      label: "Company Registration Address",
+      label: "Företagsadress",
       href: "/services/company-registration-address",
     },
   ];
 
   const takeaways = [
-    "Perfect for establishing a Swedish Aktiebolag (AB) or Enskild firma without renting commercial office space.",
-    "Includes professional mail handling of official notices from Skatteverket, Bolagsverket, and banks.",
-    "Quick and easy online setup with Swedish BankID verification.",
+    "Perfekt för att etablera ett svenskt Aktiebolag (AB) eller Enskild firma utan att behöva hyra dyra kontorslokaler.",
+    "Inkluderar professionell posthantering av officiella meddelanden från Skatteverket, Bolagsverket och banker.",
+    "Snabb och enkel onlineregistrering med BankID-verifiering.",
   ];
 
   return (
@@ -90,21 +90,17 @@ export default function CompanyRegistrationAddressPage() {
 
         {/* Page Title */}
         <h1 className="text-4xl md:text-5xl font-display font-normal text-[#0a1628] mb-6 tracking-tight leading-tight">
-          Company Registration Address in{" "}
-          <span className="italic text-[#05A7F4]">Sweden</span>
+          Registrerad företagsadress i{" "}
+          <span className="italic text-[#05A7F4]">Sverige</span>
         </h1>
 
         {/* AEO Trust Signals */}
-        <AeoTrustSignals takeaways={takeaways} lastUpdated="June 19, 2026" />
+        <AeoTrustSignals takeaways={takeaways} lastUpdated="June 20, 2026" />
 
         {/* Concise Answer Block (GEO/AEO optimized) */}
         <section className="prose max-w-none text-slate-600 space-y-6">
           <p className="text-lg text-slate-800 font-semibold leading-relaxed">
-            A company registration address provides you with a legally compliant
-            commercial street address in central Stockholm or Gothenburg. This
-            address serves as your company's official registered office (säte),
-            fulfilling all Swedish regulatory requirements set by Bolagsverket
-            and Skatteverket for new or existing business setups.
+            En registrerad företagsadress ger dig en juridiskt godkänd kommersiell gatuadress i centrala Stockholm eller Göteborg. Denna adress fungerar som ditt företags officiella säte och uppfyller alla krav som ställs av Bolagsverket och Skatteverket för både nya och befintliga företag.
           </p>
 
           <hr className="border-[#E1EDF8] my-8" />
@@ -112,46 +108,33 @@ export default function CompanyRegistrationAddressPage() {
           {/* Section 1: What is this service? */}
           <article className="space-y-4">
             <h2 className="text-2xl font-bold text-[#0a1628]">
-              Can I register a company using this address?
+              Kan jag registrera ett företag med denna adress?
             </h2>
             <p className="leading-relaxed">
-              Yes. Swedish law requires every business entity, including limited
-              companies (Aktiebolag) and sole proprietorships (Enskild firma),
-              to have a registered office address in Sweden. Residential PO
-              boxes are often rejected by registration authorities.
+              Ja. Svensk lag kräver att alla företagsformer, inklusive aktiebolag (AB) och enskilda firmor, har en registrerad adress i Sverige. Skatteverket och Bolagsverket godkänner i regel inte vanliga postboxadresser eller bostadsadresser i samma utsträckning.
             </p>
             <p className="leading-relaxed">
-              Postbox24 provides real commercial street addresses in prime
-              Swedish business zones (Stockholm Östermalm and Gothenburg Inom
-              Vallgraven). Because these are physical locations staffed by our
-              professional handlers, Bolagsverket fully accepts them as your
-              registered head office (säte).
+              Postbox24 erbjuder riktiga kommersiella gatuadresser i attraktiva affärsområden (Stockholm Östermalm och Göteborg Inom Vallgraven). Eftersom dessa är fysiska platser bemannade av vår personal, godkänner Bolagsverket dem fullt ut som ditt registrerade säte.
             </p>
           </article>
 
           {/* Section 2: How it works */}
           <article className="space-y-4 pt-6">
             <h2 className="text-2xl font-bold text-[#0a1628]">
-              How do I register my company address?
+              Hur registrerar jag min företagsadress?
             </h2>
             <p className="leading-relaxed">
-              The setup process is simple and integrates directly with Swedish
-              registration portals:
+              Processen är enkel och integreras smidigt med svenska registreringsportaler:
             </p>
             <ol className="list-decimal pl-5 space-y-2">
               <li>
-                <strong>Purchase the Plan:</strong> Select the Stockholm or
-                Gothenburg registration plan on our platform.
+                <strong>Välj ett abonnemang:</strong> Välj registreringsplanen för Stockholm eller Göteborg på vår plattform.
               </li>
               <li>
-                <strong>Submit registration to Bolagsverket:</strong> List your
-                new Postbox24 commercial street address as your company's
-                registered address (postadress) and head office (säte).
+                <strong>Skicka registreringen till Bolagsverket:</strong> Ange din nya kommersiella gatuadress från Postbox24 som företagets registrerade adress (postadress) och säte (hos verksamt.se).
               </li>
               <li>
-                <strong>Receive Government Notices:</strong> All official
-                notices from Swedish tax and business agencies are instantly
-                digitized and sent to you via secure PDF.
+                <strong>Ta emot myndighetspost:</strong> Alla officiella meddelanden från Skatteverket och Bolagsverket digitaliseras direkt och skickas till dig som säker PDF.
               </li>
             </ol>
           </article>
@@ -159,24 +142,20 @@ export default function CompanyRegistrationAddressPage() {
           {/* Section 3: Who is it for? */}
           <article className="space-y-4 pt-6">
             <h2 className="text-2xl font-bold text-[#0a1628]">
-              Who is this registration address for?
+              Vem är denna registreringstjänst till för?
             </h2>
             <p className="leading-relaxed">
-              This service is specifically tailored for:
+              Denna tjänst är särskilt utformad för:
             </p>
             <ul className="list-disc pl-5 space-y-2">
               <li>
-                <strong>New Startups:</strong> Founders looking to launch an
-                Aktiebolag (AB) without renting physical real estate.
+                <strong>Nya startups:</strong> Grundare som vill starta ett Aktiebolag (AB) utan att hyra ett fysiskt kontor.
               </li>
               <li>
-                <strong>International Parent Companies:</strong> Corporations
-                establishing a Swedish subsidiary.
+                <strong>Utländska moderbolag:</strong> Företag som etablerar ett svenskt dotterbolag.
               </li>
               <li>
-                <strong>Local Consultants:</strong> Self-employed individuals
-                who want to keep their residential address off public state
-                registers.
+                <strong>Lokala konsulter:</strong> Egenföretagare som vill hålla sin hemadress privat från offentliga register (såsom Ratsit och Allabolag).
               </li>
             </ul>
           </article>
@@ -184,37 +163,32 @@ export default function CompanyRegistrationAddressPage() {
           {/* Section 4: Frequently asked questions */}
           <article className="space-y-4 pt-8 border-t border-[#E1EDF8]">
             <h2 className="text-2xl font-bold text-[#0a1628]">
-              Frequently Asked Questions
+              Vanliga frågor
             </h2>
             <div className="space-y-4">
               <details className="group border-b border-[#E1EDF8] pb-4 [&[open]]:border-[#05A7F4]/30">
                 <summary className="font-semibold text-[#0a1628] hover:text-[#05A7F4] cursor-pointer list-none flex justify-between items-center py-2">
-                  <span>Can I register a company using this address?</span>
+                  <span>Kan jag registrera ett företag på den här adressen?</span>
                   <span className="text-[#05A7F4] group-open:rotate-180 transition-transform">
                     ▼
                   </span>
                 </summary>
                 <p className="mt-2 text-slate-500 leading-relaxed text-sm">
-                  Yes, our addresses are located in commercial buildings, making
-                  them fully compliant with Bolagsverket (Swedish Companies
-                  Registration Office) regulations for registering a limited
-                  company (Aktiebolag).
+                  Ja, våra adresser ligger i kommersiella fastigheter, vilket gör dem helt godkända enligt Bolagsverkets regler för att registrera ett aktiebolag (AB).
                 </p>
               </details>
 
               <details className="group border-b border-[#E1EDF8] pb-4 [&[open]]:border-[#05A7F4]/30">
                 <summary className="font-semibold text-[#0a1628] hover:text-[#05A7F4] cursor-pointer list-none flex justify-between items-center py-2">
                   <span>
-                    Does Skatteverket accept virtual company addresses?
+                    Godkänner Skatteverket virtuella företagsadresser?
                   </span>
                   <span className="text-[#05A7F4] group-open:rotate-180 transition-transform">
                     ▼
                   </span>
                 </summary>
                 <p className="mt-2 text-slate-500 leading-relaxed text-sm">
-                  Yes, provided the address is a physical street location
-                  capable of receiving corporate mail. Our central office
-                  addresses satisfy all Skatteverket tax registration criteria.
+                  Ja, förutsatt att adressen är en fysisk gatuadress som kan ta emot företagspost. Våra centrala kontorsadresser uppfyller alla Skatteverkets krav för skatteregistrering.
                 </p>
               </details>
             </div>

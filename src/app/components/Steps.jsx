@@ -5,20 +5,20 @@ export default function Steps() {
   const steps = [
     {
       n: "1",
-      title: "Choose Your Address",
-      desc: "Select the PO box and location that best fit your needs.",
+      title: "Välj din adress",
+      desc: "Välj den postbox och ort som bäst passar dina behov.",
       icon: MapPin,
     },
     {
       n: "2",
-      title: "Register the Address",
-      desc: "Use it as your official mailing address for business or personal purposes.",
+      title: "Registrera adressen",
+      desc: "Använd den som din officiella postadress för företag eller privat bruk.",
       icon: FileText,
     },
     {
       n: "3",
-      title: "Receive Your Mail",
-      desc: "Collect your mail whenever it is convenient for you.",
+      title: "Ta emot din post",
+      desc: "Hämta din post eller få den digitalt när det passar dig.",
       icon: Inbox,
     },
   ];
@@ -29,15 +29,15 @@ export default function Steps() {
         {/* Heading */}
         <div className="text-center max-w-2xl mx-auto mb-18">
           <span className="inline-block text-[#05A7F4] text-xs font-semibold tracking-[0.15em] uppercase mb-4">
-            How It Works
+            Så fungerar det
           </span>
           <h2 className="text-4xl md:text-5xl font-display font-normal text-[#0a1628] mb-5 tracking-tight leading-tight">
-            Get Started in{" "}
-            <span className="italic text-[#05A7F4]">3 Simple Steps</span>
+            Kom igång i{" "}
+            <span className="italic text-[#05A7F4]">3 enkla steg</span>
           </h2>
           <p className="text-slate-500 text-base leading-relaxed">
-            Establish your official presence in Sweden in less than 5 minutes
-            with our fully digital process.
+            Etablera din officiella närvaro i Sverige på mindre än 5 minuter
+            med vår helt digitala process.
           </p>
         </div>
 
@@ -56,7 +56,7 @@ export default function Steps() {
               >
                 {/* Step Kicker Tag */}
                 <span className="inline-block bg-[#EEF6FD] text-[#05A7F4] text-[10px] font-extrabold px-3 py-1 rounded-lg border border-[#05A7F4]/10 uppercase tracking-widest mb-4">
-                  Step {step.n}
+                  Steg {step.n}
                 </span>
 
                 {/* Icon circle */}

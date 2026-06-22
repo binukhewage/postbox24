@@ -16,4 +16,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://postbox24.se/sitemap.xml
+Sitemap: https://postboxoffers.com/sitemap.xml

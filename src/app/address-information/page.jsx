@@ -11,7 +11,7 @@ export const metadata = {
   description:
     "Viktig information om att anmäla Särskild postadress hos Skatteverket samt ändra företagsadress hos Bolagsverket och verksamt.se.",
   alternates: {
-    canonical: "https://postbox24.se/address-information",
+    canonical: "https://postboxoffers.com/address-information",
   },
 };
 
@@ -56,7 +56,7 @@ export default function AddressInformationPage() {
   };
 
   const breadcrumbItems = [
-    { label: "Address Information", href: "/address-information" },
+    { label: "Adressinformation", href: "/address-information" },
   ];
 
   const takeaways = [
@@ -76,11 +76,11 @@ export default function AddressInformationPage() {
 
         {/* Page Title */}
         <h1 className="text-4xl md:text-5xl font-display font-normal text-[#0a1628] mb-6 tracking-tight leading-tight">
-          Address <span className="italic text-[#05A7F4]">Information</span>
+          Adress<span className="italic text-[#05A7F4]">information</span>
         </h1>
 
         {/* AEO Trust Signals */}
-        <AeoTrustSignals takeaways={takeaways} lastUpdated="June 20, 2026"/>
+        <AeoTrustSignals takeaways={takeaways} lastUpdated="20 juni 2026"/>
 
         {/* Introduction */}
         <div className="prose max-w-none text-slate-600 space-y-8">

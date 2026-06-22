@@ -7,14 +7,14 @@ export default function Testimonials() {
   const reviews = [
     {
       quote:
-        "Smooth, simple, and professional. I've used Postbox24 for several years.",
+        "Smidigt, enkelt och professionellt. Jag har använt Postbox24 i flera år.",
     },
     {
       quote:
-        "The perfect solution when I wanted to separate my business mail from my home address.",
+        "Den perfekta lösningen när jag ville skilja min företagspost från min hemadress.",
     },
     {
-      quote: "Excellent service, secure handling, and friendly staff.",
+      quote: "Utmärkt service, säker hantering och trevlig personal.",
     },
   ];
 
@@ -29,10 +29,10 @@ export default function Testimonials() {
             ))}
           </div>
           <span className="inline-block text-[#05A7F4] text-xs font-semibold tracking-[0.15em] uppercase mb-4">
-            Testimonials
+            Kundomdömen
           </span>
           <h2 className="text-4xl md:text-5xl font-display font-normal text-[#0a1628] tracking-tight leading-tight">
-            What Our <span className="italic text-[#05A7F4]">Clients Say</span>
+            Vad våra <span className="italic text-[#05A7F4]">kunder säger</span>
           </h2>
         </div>
       </div>

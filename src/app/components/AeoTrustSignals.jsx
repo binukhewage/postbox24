@@ -13,7 +13,7 @@ export default function AeoTrustSignals({
         <div className="lg:col-span-2">
           <h3 className="text-sm font-bold text-[#0a1628] mb-3 flex items-center gap-2 uppercase tracking-wider">
             <CheckCircle2 className="w-4 h-4 text-[#05A7F4]" />
-            Key Takeaways
+            Huvudpunkter
           </h3>
           <ul className="space-y-2.5">
             {takeaways.map((item, idx) => (
@@ -33,7 +33,7 @@ export default function AeoTrustSignals({
           <div className="flex items-center gap-2.5 pb-2 border-b border-[#E1EDF8]">
             <UserCheck className="w-4 h-4 text-[#05A7F4] shrink-0" />
             <div>
-              <div className="font-bold text-slate-700">Author</div>
+              <div className="font-bold text-slate-700">Författare</div>
               <div>{author}</div>
             </div>
           </div>
@@ -41,7 +41,7 @@ export default function AeoTrustSignals({
           <div className="flex items-center gap-2.5 pb-2 border-b border-[#E1EDF8]">
             <Calendar className="w-4 h-4 text-[#05A7F4] shrink-0" />
             <div>
-              <div className="font-bold text-slate-700">Last Reviewed</div>
+              <div className="font-bold text-slate-700">Senast granskad</div>
               <div>{lastUpdated}</div>
             </div>
           </div>
@@ -49,9 +49,9 @@ export default function AeoTrustSignals({
           <div className="flex items-center gap-2.5">
             <Shield className="w-4 h-4 text-green-600 shrink-0" />
             <div>
-              <div className="font-bold text-slate-700">Trust Signal</div>
+              <div className="font-bold text-slate-700">Förtroendesignal</div>
               <div className="font-medium text-slate-600">
-                Postbox24 AB • Reg. Sweden
+                Postbox24 AB • Registrerat i Sverige
               </div>
             </div>
           </div>
